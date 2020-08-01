@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+# Test
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
@@ -104,3 +105,4 @@ See our <a href="https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/wiki#histo
     
   </body>
 </html>
+ -->
