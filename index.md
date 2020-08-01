@@ -1,49 +1,58 @@
 # AnimatedLEDStrip
-The AnimatedLEDStrip set of libraries are meant to make the process of running animations on a LED strip much easier.
-This library also supports running concurrent animations on a LED strip. Multiple animations can be run simultaneously, even over the same part of the strip. See the [wiki](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/wiki) for more information.
+The AnimatedLEDStrip set of libraries are meant to simplify the process of running animations on an LED strip to a point that anyone can do it.
+The core of the libraries supports concurrency, allowing multiple animations to be run simultaneously, even over the same part of the strip.
 
 ## Structure
-The libraries are designed so you have multiple options for how you integrate AnimatedLEDStrip into your project.
-- If you want to have a solution that works out of the box with minimal effort, then you can install the [server-pi](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip#raspberry-pi-server) on a Raspberry Pi and use one of the client examples to control it
-- If you want to make your program into a client, you can import the [AnimatedLEDStripClient](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/README.md#client) library.
-Examples of this include the [Android app](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip#android-client) and the [Raspberry Pi Touchscreen Client](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip#raspberry-pi-touchscreen-client).
-Multiple languages are supported, see the library for details.
-- If you want to control the strip directly from a Kotlin/Java program, you can import the device library for your device
-  - If your device isn't supported, you can [create a new device library](https://github.com/AnimatedLEDStrip/AnimatedLEDStripServer/wiki)
+AnimatedLEDStrip is designed to give you multiple options for how you integrate AnimatedLEDStrip into your project.
+You can get a solution that works out of the box, convert your program into a client, or even include the core library directly.
 
-### Main Libraries
-The main set of libraries includes:
-#### [Core](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip)
-Contains all the animations and generic structure for communicating with LED strips.
+### [Core Library](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip)
+Contains all the animations and generic structure for controlling LED strips.
+Written in Kotlin/JVM.
 
-#### [Server](https://github.com/AnimatedLEDStrip/server)
+### [Server Library](https://github.com/AnimatedLEDStrip/server)
 A library for running a server that runs animations on a LED strip.
-The server communicates with clients to start and end animations.
-Also contains a command line interface that can be used to monitor and partially control the server.
-To create an executable server, this library is combined with a device library and a short main method (see the [Raspberry Pi Server](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip#raspberry-pi-server) for an example).
+The server communicates with clients to start and end animations, among other things.
+Written in Kotlin/JVM
 
-#### [Client](https://github.com/AnimatedLEDStrip/AnimatedLEDStripClient) 
-A library for communicating with a server by sending JSON over socket connections.
-See library for a list of supported languages.
+### Client Libraries
+Clients can be written in any language, provided they send the correct JSON communications to the server.
+Client libraries are designed to simplify that.
+
+Currently, the client libraries are written for the following languages:
+- [C++](https://github.com/AnimatedLEDStrip/client-cpp)
+- Dart
+- [Go](https://github.com/AnimatedLEDStrip/client-go)
+- [Kotlin/JVM](https://github.com/AnimatedLEDStrip/client-kotlin-jvm)
+- [Python 3](https://github.com/AnimatedLEDStrip/client-python)
+- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby)
+- Rust
+
+There is also a [terminal program](#ledclient) for communicating with a server.
 
 ### Device Libraries
 Each device that can run LEDs has its own device library.
-Currently the only device supported is the Raspberry Pi, but this can be [expanded to more devices](https://github.com/AnimatedLEDStrip/server/wiki) in the future:
-- [Raspberry Pi](https://github.com/AnimatedLEDStrip/device-pi) - A device library for running
-LEDs on a Raspberry Pi 3B, 3B+ or 4B
+Currently the only device supported is the [Raspberry Pi](https://github.com/AnimatedLEDStrip/device-pi), but this can be [expanded to more devices](https://github.com/AnimatedLEDStrip/server/wiki) in the future
 
-### Examples
+### Programs
+#### [ledclient](https://github.com/AnimatedLEDStrip/ledclient)
+A command line program for communicating with a server.
+Written in C++.
+Can be installed by running:
+```
+curl -s https://animatedledstrip.github.io/install/install-ledclient.sh | sudo bash
+```
+
 #### [Raspberry Pi Server](https://github.com/AnimatedLEDStrip/server-pi)
-This repository contains an example implementation of a server for a Raspberry Pi.
-This can be used as-is with no modification, or can be used as a template for creating servers on Raspberry Pis or other devices.
-The repository includes support for installation using [`ansible-pull`](https://github.com/AnimatedLEDStrip/AnimatedLEDStripPiServerExample#install), further simplifying the install process.
+Runs a server for a Raspberry Pi.
+Written in Kotlin/JVM.
+Can be installed by running:
+```
+curl -s https://animatedledstrip.github.io/install/install-pi-server.sh | sudo bash
+```
 
-#### [Raspberry Pi Touchscreen Client](https://github.com/AnimatedLEDStrip/AnimatedLEDStripGUI)
-This repository contains an example of a GUI that uses the AnimatedLEDStripClient library to communicate with an AnimatedLEDStripServer.
-Built with [TornadoFX](https://tornadofx.io/), it is designed to run on a Raspberry Pi with the official 7" touchscreen, though it can be run on any device with Java 8 and JavaFX installed.
-
-#### [Android Client](https://github.com/AnimatedLEDStrip/AnimatedLEDStripAndroidControl)
-An Android app that uses the AnimatedLEDStripClient library to communicate with an AnimatedLEDStripServer.
+#### [Android App](https://github.com/AnimatedLEDStrip/AnimatedLEDStripAndroidControl)
+An app for communicating with an AnimatedLEDStrip server.
 
 ### Other
 #### [Arduino Library](https://github.com/AnimatedLEDStrip/AnimatedLEDStripCppArduino)
