@@ -31,15 +31,88 @@ Currently, client libraries are written for the following languages:
 There is also a [terminal program](#ledclient) for communicating with a server.
 
 #### Library Feature Chart
-|Language|AnimationData|AnimationInfo|EndAnimation|Section|StripInfo|Partial Data|Callbacks|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|C++|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|✅|
-|Dart||||||||
-|Go|✅/✅|✅/✅|✅/✅|❌/❌|✅/✅|❌|❌|
-|Kotlin/JVM|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|✅|
-|Python 3|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|❌|✅|
-|Ruby|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|❌|
-|Rust||||||||
+<table>
+  <tr>
+    <th>Language</th>
+    <th align="center">AnimationData</th>
+    <th align="center">AnimationInfo</th>
+    <th align="center">EndAnimation</th>
+    <th align="center">Section</th>
+    <th align="center">StripInfo</th>
+    <th align="center">Partial Data</th>
+    <th align="center">Callbacks</th>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Dart</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+  </tr>
+  <tr>
+    <td>Go</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">❌/❌</td>
+    <td align="center">✅/✅</td>
+    <td align="center">❌</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Kotlin/JVM</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Python 3</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">❌</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Rust</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+  </tr>
+</table>
 
 ### Device Libraries
 Each device that can run LEDs has its own device library.
