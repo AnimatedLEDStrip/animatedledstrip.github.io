@@ -19,7 +19,7 @@ Written in Kotlin/JVM
 Clients can be written in any language, provided they send the correct JSON communications to the server.
 Client libraries are designed to simplify that.
 
-Currently, the client libraries are written for the following languages:
+Currently, client libraries are written for the following languages:
 - [C++](https://github.com/AnimatedLEDStrip/client-cpp)
 - Dart
 - [Go](https://github.com/AnimatedLEDStrip/client-go)
@@ -29,6 +29,17 @@ Currently, the client libraries are written for the following languages:
 - Rust
 
 There is also a [terminal program](#ledclient) for communicating with a server.
+
+#### Library Feature Chart
+|Language|AnimationData|AnimationInfo|EndAnimation|Section|StripInfo|Partial Data|Callbacks|
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|C++|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|✅|
+|Dart||||||||
+|Go|✅/✅|✅/✅|✅/✅|❌/❌|✅/✅|❌|❌|
+|Kotlin/JVM|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|✅|
+|Python 3|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|❌|✅|
+|Ruby|✅/✅|✅/✅|✅/✅|✅/✅|✅/✅|✅|❌|
+|Rust||||||||
 
 ### Device Libraries
 Each device that can run LEDs has its own device library.
