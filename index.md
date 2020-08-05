@@ -67,7 +67,7 @@ There is also a [terminal program](#ledclient) for communicating with a server.
     <td align="center">✅/✅</td>
     <td align="center">✅/✅</td>
     <td align="center">✅/✅</td>
-    <td align="center">❌/❌</td>
+    <td align="center">✅/✅</td>
     <td align="center">✅/✅</td>
     <td align="center">❌</td>
     <td align="center">❌</td>
