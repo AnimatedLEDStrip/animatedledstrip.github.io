@@ -222,7 +222,7 @@ Currently, client libraries are written for the following languages:
 This is an overview of how the communication part of a client should work, with things such as:
 
 - Variables that should exist and their type
-- Methods that should exist and the order of the operations they perform
+- Methods that should exist and pseudocode for their operation
 
 All client libraries should follow this format.
 
