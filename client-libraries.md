@@ -12,25 +12,26 @@ Currently, client libraries are written for the following languages:
 - [Ruby](https://github.com/AnimatedLEDStrip/client-ruby)
 - Rust
 
-## Library Feature Chart
+## Library Features
+
+### Sending Capability
+
 <table>
   <tr>
     <th>Language</th>
-    <th align="center">AnimationData*</th>
-    <th align="center">AnimationInfo*</th>
-    <th align="center">EndAnimation*</th>
-    <th align="center">Section*</th>
-    <th align="center">StripInfo*</th>
-    <th align="center">Partial Data**</th>
-    <th align="center">Callbacks***</th>
+    <th align="center">AnimationData</th>
+    <th align="center">AnimationInfo</th>
+    <th align="center">EndAnimation</th>
+    <th align="center">Message</th>
+    <th align="center">Section</th>
+    <th align="center">StripInfo</th>
   </tr>
   <tr>
     <td>C++</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -42,47 +43,42 @@ Currently, client libraries are written for the following languages:
     <td />
     <td />
     <td />
-    <td />
   </tr>
   <tr>
     <td>Go</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">❌</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Kotlin/JVM</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
   <tr>
     <td>Python 3</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
   <tr>
     <td>Ruby</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
-    <td align="center">✅/✅</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Rust</td>
@@ -92,15 +88,134 @@ Currently, client libraries are written for the following languages:
     <td />
     <td />
     <td />
+  </tr>
+</table>
+
+### Receiving Capability
+
+<table>
+  <tr>
+    <th>Language</th>
+    <th align="center">AnimationData</th>
+    <th align="center">AnimationInfo</th>
+    <th align="center">Command</th>
+    <th align="center">EndAnimation</th>
+    <th align="center">Section</th>
+    <th align="center">StripInfo</th>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Dart</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+  </tr>
+  <tr>
+    <td>Go</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Kotlin/JVM</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Python 3</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Rust</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
     <td />
   </tr>
 </table>
 
-\* Send/Receive capability
+### Other Capabilities
 
-** Ability to handle an incomplete communication from the server that is completed later
+<table>
+  <tr>
+    <th>Language</th>
+    <th align="center">Partial Data*</th>
+    <th align="center">Callbacks**</th>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Dart</td>
+    <td />
+    <td />
+  </tr>
+  <tr>
+    <td>Go</td>
+    <td align="center">❌</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Kotlin/JVM</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Python 3</td>
+    <td align="center">❌</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td align="center">✅</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Rust</td>
+    <td />
+    <td />
+  </tr>
+</table>
 
-*** Program can specify actions to execute when certain events occur
+\* Ability to handle an incomplete communication from the server that is completed later
+
+** Program can specify actions to execute when certain events occur
 
 ## Creating a New Client Library
 
