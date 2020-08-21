@@ -14,7 +14,7 @@ Currently, client libraries are written for the following languages:
 
 ## Library Features
 
-### Sending Capability
+### Receiving Capability
 
 <table>
   <tr>
@@ -31,7 +31,7 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -49,7 +49,7 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -76,7 +76,7 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -91,7 +91,7 @@ Currently, client libraries are written for the following languages:
   </tr>
 </table>
 
-### Receiving Capability
+### Sending Capability
 
 <table>
   <tr>
@@ -107,7 +107,7 @@ Currently, client libraries are written for the following languages:
     <td>C++</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -125,7 +125,7 @@ Currently, client libraries are written for the following languages:
     <td>Go</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -152,7 +152,7 @@ Currently, client libraries are written for the following languages:
     <td>Ruby</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
+    <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -198,7 +198,7 @@ Currently, client libraries are written for the following languages:
   </tr>
   <tr>
     <td>Python 3</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
   <tr>
