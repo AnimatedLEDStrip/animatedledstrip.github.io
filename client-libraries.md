@@ -308,7 +308,9 @@ while connected
   append partialData to beginning of input
   clear partialData
   split input into inputList by ';;;'
-  if last input in inputList is incomplete, save to partialData and remove from inputList
+  if last input in inputList is incomplete
+    save last input to partialData
+    remove last input from inputList
 
   for data in inputList
     if data is an empty string
