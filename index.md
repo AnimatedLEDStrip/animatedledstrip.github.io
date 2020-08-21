@@ -15,7 +15,7 @@ A library for running a server that runs animations on a LED strip.
 The server communicates with clients to start and end animations, among other things.
 Written in Kotlin/JVM
 
-### [Client Libraries](clients)
+### [Client Libraries](client-libraries)
 Clients can be written in any language, provided they send the correct JSON communications to the server.
 Client libraries are designed to simplify that.
 
