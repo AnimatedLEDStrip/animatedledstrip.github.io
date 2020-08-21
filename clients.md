@@ -21,8 +21,8 @@ Currently, client libraries are written for the following languages:
     <th align="center">EndAnimation*</th>
     <th align="center">Section*</th>
     <th align="center">StripInfo*</th>
-    <th align="center">Partial Data</th>
-    <th align="center">Callbacks</th>
+    <th align="center">Partial Data**</th>
+    <th align="center">Callbacks***</th>
   </tr>
   <tr>
     <td>C++</td>
@@ -96,6 +96,10 @@ Currently, client libraries are written for the following languages:
   </tr>
 </table>
 * Send/Receive capability
+
+** Ability to handle an incomplete communication from the server that is completed later
+
+*** Program can specify actions to execute when certain events occur
 
 ## Creating a New Client Library
 
