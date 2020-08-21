@@ -1,10 +1,112 @@
-# How Clients Should Work
+# AnimatedLEDStrip Clients
+
+Clients can be written in any language, provided they send the correct JSON communications to the server.
+Client libraries are designed to simplify that.
+
+Currently, client libraries are written for the following languages:
+- [C++](https://github.com/AnimatedLEDStrip/client-cpp)
+- Dart
+- [Go](https://github.com/AnimatedLEDStrip/client-go)
+- [Kotlin/JVM](https://github.com/AnimatedLEDStrip/client-kotlin-jvm)
+- [Python 3](https://github.com/AnimatedLEDStrip/client-python)
+- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby)
+- Rust
+
+## Library Feature Chart
+<table>
+  <tr>
+    <th>Language</th>
+    <th align="center">AnimationData*</th>
+    <th align="center">AnimationInfo*</th>
+    <th align="center">EndAnimation*</th>
+    <th align="center">Section*</th>
+    <th align="center">StripInfo*</th>
+    <th align="center">Partial Data</th>
+    <th align="center">Callbacks</th>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Dart</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+  </tr>
+  <tr>
+    <td>Go</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">❌</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Kotlin/JVM</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Python 3</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">❌</td>
+    <td align="center">✅</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅/✅</td>
+    <td align="center">✅</td>
+    <td align="center">❌</td>
+  </tr>
+  <tr>
+    <td>Rust</td>
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+    <td />
+  </tr>
+</table>
+* Send/Receive capability
+
+## Creating a New Client Library
 
 This is an overview of how the communication part of a client should work, with things such as:
+
 - Variables that should exist and their type
 - Methods that should exist and the order of the operations they perform
 
-## Variables
+All client libraries should follow this format.
+
+### Variables
 
 ```
 address: String
@@ -32,9 +134,9 @@ onNewSectionCallback: (Section) -> Any
 onNewStripInfoCallback: (StripInfo) -> Any
 ```
 
-## Methods
+### Methods
 
-### Start
+#### Start
 
 ```
 if started
@@ -61,7 +163,7 @@ call onConnectCallback
 start receive loop
 ```
 
-### End
+#### End
 
 ```
 started = false
