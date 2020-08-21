@@ -95,7 +95,8 @@ Currently, client libraries are written for the following languages:
     <td />
   </tr>
 </table>
-* Send/Receive capability
+
+\* Send/Receive capability
 
 ** Ability to handle an incomplete communication from the server that is completed later
 
