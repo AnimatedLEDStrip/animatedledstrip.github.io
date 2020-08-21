@@ -1,4 +1,4 @@
-# AnimatedLEDStrip Clients
+# AnimatedLEDStrip Client Libraries
 
 Clients can be written in any language, provided they send the correct JSON communications to the server.
 Client libraries are designed to simplify that.
