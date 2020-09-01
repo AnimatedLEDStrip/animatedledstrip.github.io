@@ -300,7 +300,6 @@ stop receive loop
 while connected
   try
     read input from socket
-    break
   except io error
     started = false
     connected = false
