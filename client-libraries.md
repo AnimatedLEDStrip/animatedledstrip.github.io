@@ -5,7 +5,7 @@ Client libraries are designed to simplify that.
 
 Currently, client libraries are written for the following languages:
 - [C++](https://github.com/AnimatedLEDStrip/client-cpp)
-- Dart
+- [Dart](https://github.com/AnimatedLEDStrip/client-dart)
 - [Go](https://github.com/AnimatedLEDStrip/client-go)
 - [Kotlin/JVM](https://github.com/AnimatedLEDStrip/client-kotlin-jvm)
 - [Python 3](https://github.com/AnimatedLEDStrip/client-python)
@@ -37,12 +37,12 @@ Currently, client libraries are written for the following languages:
   </tr>
   <tr>
     <td>Dart</td>
-    <td />
-    <td />
-    <td />
-    <td />
-    <td />
-    <td />
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Go</td>
@@ -114,12 +114,12 @@ Currently, client libraries are written for the following languages:
   </tr>
   <tr>
     <td>Dart</td>
-    <td />
-    <td />
-    <td />
-    <td />
-    <td />
-    <td />
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">❌</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Go</td>
@@ -183,8 +183,8 @@ Currently, client libraries are written for the following languages:
   </tr>
   <tr>
     <td>Dart</td>
-    <td />
-    <td />
+    <td align="center">✅</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Go</td>
