@@ -76,7 +76,7 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -152,7 +152,7 @@ Currently, client libraries are written for the following languages:
     <td>Ruby</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -204,7 +204,7 @@ Currently, client libraries are written for the following languages:
   <tr>
     <td>Ruby</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Rust</td>
