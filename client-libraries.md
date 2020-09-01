@@ -224,7 +224,7 @@ This is an overview of how the communication part of a client should work, with 
 - Variables that should exist and their type
 - Methods that should exist and pseudocode for their operation
 
-All client libraries should follow this format.
+All client libraries should follow this format, though small variations are expected because not every language works the same.
 
 ### Variables
 
@@ -286,6 +286,8 @@ start receive loop
 #### End
 
 ```
+if not connected
+  return
 started = false
 connected = false
 close socket
