@@ -101,7 +101,6 @@ Currently, client libraries are written for the following languages:
     <th align="center">Command</th>
     <th align="center">EndAnimation</th>
     <th align="center">Section</th>
-    <th align="center">StripInfo</th>
   </tr>
   <tr>
     <td>C++</td>
@@ -110,11 +109,9 @@ Currently, client libraries are written for the following languages:
     <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Dart</td>
-    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -128,11 +125,9 @@ Currently, client libraries are written for the following languages:
     <td align="center">❌</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Kotlin/JVM</td>
-    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
@@ -146,7 +141,6 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Ruby</td>
@@ -155,11 +149,9 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Rust</td>
-    <td />
     <td />
     <td />
     <td />
