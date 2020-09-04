@@ -181,7 +181,7 @@ Currently, client libraries are written for the following languages:
   <tr>
     <td>Go</td>
     <td align="center">❌</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td>Kotlin/JVM</td>
