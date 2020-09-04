@@ -49,7 +49,7 @@ Currently, client libraries are written for the following languages:
     <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
@@ -122,7 +122,7 @@ Currently, client libraries are written for the following languages:
     <td>Go</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
-    <td align="center">❌</td>
+    <td align="center">✅</td>
     <td align="center">✅</td>
     <td align="center">✅</td>
   </tr>
