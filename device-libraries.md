@@ -1,5 +1,5 @@
 # Device Libraries
-- [Raspberry Pi (AnimatedLEDStripPi)](https://github.com/AnimatedLEDStrip/AnimatedLEDStripPi)
+- [Raspberry Pi (device-pi)](https://github.com/AnimatedLEDStrip/device-pi)
 
 ## Creating a Device Library
 New device libraries are fairly simple to create.
