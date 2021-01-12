@@ -19,9 +19,9 @@ Written in Kotlin/JVM
 Clients can be written in any language, provided they send the correct JSON communications to the server.
 Client libraries are designed to simplify that.
 
-### Device Libraries
+### [Device Libraries](device-libraries)
 Each device that can run LEDs has its own device library.
-Currently the only device supported is the [Raspberry Pi](https://github.com/AnimatedLEDStrip/device-pi), but this can be [expanded to more devices](https://github.com/AnimatedLEDStrip/server/wiki) in the future
+Currently the only device supported is the [Raspberry Pi](https://github.com/AnimatedLEDStrip/device-pi), but this can be expanded to more devices in the future.
 
 ### Programs
 #### [ledclient](https://github.com/AnimatedLEDStrip/ledclient)
