@@ -19,4 +19,4 @@ The `StripInfo` class defines parameters for creating the LED strip such as:
 - What dimensionality of animations are supported (1d, 2d, 3d)
 - etc.
 
-See the StripInfo class in the [core library](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/leds/stripmanagement/StripInfo.kt) for latest parameters available.
+See the `StripInfo` class in the [core library](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/leds/stripmanagement/StripInfo.kt) for latest parameters available.
