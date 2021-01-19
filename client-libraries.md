@@ -228,7 +228,7 @@ connection: Socket
 started: Boolean
 connected: Boolean
 
-runningAnimations: Map<String, AnimationData>
+runningAnimations: Map<String, RunningAnimationParams>
 sections: Map<String, Section>
 supportedAnimations: Map<String, AnimationInfo>
 stripInfo: StripInfo
