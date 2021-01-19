@@ -4,13 +4,13 @@ Clients can be written in any language, provided they send the correct JSON comm
 Client libraries are designed to simplify that.
 
 Currently, client libraries are written for the following languages:
-- [C++](https://github.com/AnimatedLEDStrip/client-cpp)
-- [Dart](https://github.com/AnimatedLEDStrip/client-dart)
-- [Go](https://github.com/AnimatedLEDStrip/client-go)
+- [C++](https://github.com/AnimatedLEDStrip/client-cpp) (needs update to be compatible with 1.0.0)
+- [Dart](https://github.com/AnimatedLEDStrip/client-dart) (needs update to be compatible with 1.0.0)
+- [Go](https://github.com/AnimatedLEDStrip/client-go) (needs update to be compatible with 1.0.0)
 - [Kotlin/JVM](https://github.com/AnimatedLEDStrip/client-kotlin-jvm)
-- [Python 3](https://github.com/AnimatedLEDStrip/client-python)
-- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby)
-- Rust
+- [Python 3](https://github.com/AnimatedLEDStrip/client-python) (needs update to be compatible with 1.0.0)
+- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby) (needs update to be compatible with 1.0.0)
+- Rust (incomplete)
 
 ## Library Features
 
