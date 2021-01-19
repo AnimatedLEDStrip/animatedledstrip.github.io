@@ -238,10 +238,11 @@ onDisconnectCallback: (ip: String, port: Int) -> Any
 onUnableToConnectCallback: (ip: String, port: Int) -> Any
 
 onReceiveCallback: (data: String) -> Any
-onNewAnimationDataCallback: (AnimationData) -> Any
 onNewAnimationInfoCallback: (AnimationInfo) -> Any
+onNewCurrentStripColorCallback: (CurrentStripColor) -> Any
 onNewEndAnimationCallback: (EndAnimation) -> Any
 onNewMessageCallback: (Message) -> Any
+onNewRunningAnimationParamsCallback: (RunningAnimationParams) -> Any
 onNewSectionCallback: (Section) -> Any
 onNewStripInfoCallback: (StripInfo) -> Any
 ```
@@ -305,37 +306,37 @@ while connected
     save last input to partialData
     remove last input from inputList
 
-  for data in inputList
-    if data is an empty string
+  for splitData in inputList
+    if splitData is an empty string
       continue
 
     call onReceiveCallback
+    
+    data = decodeJson(splitData)
 
-    if type is AnimationData (DATA:)
-      create instance
-      call onNewAnimationDataCallback
-      add instance to running animations
-    else if type is AnimationInfo (AINF:)
-      create instance
+    if data is AnimationInfo
       add instance to supported animations
       call onNewAnimationInfoCallback
-    else if type is Command (CMD :)
+    else if data is AnimationToRunParams
+      print warning "Receiving AnimationToRunParams is not supported by client"
+    else if data is ClientParams
+      print warning "Receiving ClientParams is not supported by client"
+    else if data is Command
       print warning "Receiving Command is not supported by client"
-    else if type is EndAnimation (END :)
-      create instance
+    else if data is EndAnimation
       call onNewEndAnimationCallback
       remove animation from running animations
-    else if type is Message (MSG :)
-      create instance
+    else if data is Message
       call onNewMessageCallback
-    else if type is Section (SECT:)
-      create instance
+    else if data is RunningAnimationParams
+      call onNewRunningAnimationParamsCallback
+      add instance to running animations
+    else if data is Section
       call onNewSectionCallback
       add instance to sections
-    else if type is StripInfo (SINF:)
-      create instance
+    else if data is StripInfo
       set stripInfo to instance
       call onNewStripInfoCallback
     else
-      print warning "Unrecognized data type: $type"
+      print warning "Unrecognized data type: $data"
 ```
