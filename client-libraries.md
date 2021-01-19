@@ -323,6 +323,8 @@ while connected
       print warning "Receiving ClientParams is not supported by client"
     else if data is Command
       print warning "Receiving Command is not supported by client"
+    else if data is CurrentStripColor
+      call onNewCurrentStripColorCallback
     else if data is EndAnimation
       call onNewEndAnimationCallback
       remove animation from running animations
