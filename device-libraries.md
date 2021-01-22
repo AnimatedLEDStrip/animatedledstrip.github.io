@@ -4,6 +4,10 @@
 
 A device library is how AnimatedLEDStrip bridges the gap between the abstract code in the core library and the physical LEDs.
 
+## Using a Device Library
+
+See [Creating an Executable Server](https://animatedledstrip.github.io/creating-an-executable-server).
+
 ## Creating a Device Library
 
 New device libraries are fairly simple to create.
