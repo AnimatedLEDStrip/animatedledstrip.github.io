@@ -1,7 +1,11 @@
 # Device Libraries
+
 - [Raspberry Pi (device-pi)](https://github.com/AnimatedLEDStrip/device-pi)
 
+A device library is how AnimatedLEDStrip bridges the gap between the abstract code in the core library and the physical LEDs.
+
 ## Creating a Device Library
+
 New device libraries are fairly simple to create.
 They must include one class that implements `NativeLEDStrip`.
 
@@ -11,6 +15,7 @@ A `StripInfo` instance (see below) that should be used to set appropriate parame
 See the [Raspberry Pi Device Library](https://github.com/AnimatedLEDStrip/device-pi) for an example of a device library.
 
 ### StripInfo
+
 The `StripInfo` class defines parameters for creating the LED strip such as:
 - The number of LEDs
 - The pin number
