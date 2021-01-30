@@ -27,7 +27,7 @@ Currently the only device supported is the [Raspberry Pi](https://github.com/Ani
 #### [Browser Client](http://alsclient.website)
 A website for connecting to an AnimatedLEDStrip server and controlling your LEDs.
 Can be found at [alsclient.website](http://alsclient.website).
-Written with [Kotlin/JS for React](https://kotlinlang.org/docs/tutorials/javascript/setting-up.html).
+Written in [Kotlin/JS for React](https://kotlinlang.org/docs/tutorials/javascript/setting-up.html).
 
 #### [ledclient](https://github.com/AnimatedLEDStrip/ledclient)
 A command line program for communicating with a server.
