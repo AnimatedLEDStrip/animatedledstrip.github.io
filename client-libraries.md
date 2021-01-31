@@ -14,7 +14,7 @@ Currently, client libraries are written for the following languages:
 
 ## Creating a New Client Library
 
-This is an overview of how the communication part of a client should work, with things such as:
+This is an overview of what should be included in the client library, such as:
 
 - Classes that should be created
 - HTTP Endpoints to communicate with
