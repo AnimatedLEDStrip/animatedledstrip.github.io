@@ -85,7 +85,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `xRotation` (double) (`0.0`)
 - `yRotation` (double) (`0.0`)
 - `zRotation` (double) (`0.0`)
-- `rotationOrder` (list(string)) (`listOf("ROTATE_X", "ROTATE_Z"`)
+- `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
 
 #### `Equation`
 
@@ -107,7 +107,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `xRotation` (double) (`0.0`)
 - `yRotation` (double) (`0.0`)
 - `zRotation` (double) (`0.0`)
-- `rotationOrder` (list(string)) (`listOf("ROTATE_X", "ROTATE_Z"`)
+- `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
 
 #### `RunningAnimationParams`
 
