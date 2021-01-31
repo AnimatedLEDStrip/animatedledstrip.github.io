@@ -213,132 +213,160 @@ Currently, client libraries are written for the following languages:
 
 This is an overview of how the communication part of a client should work, with things such as:
 
-- Variables that should exist and their type
-- Methods that should exist and pseudocode for their operation
+- Classes that should be created
+- HTTP Endpoints to communicate with
 
 All client libraries should follow this format, though small variations are expected because not every language works the same.
 
-### Variables
+### Classes
 
-```
-address: String
-port: Int
-connection: Socket
+Because some classes use other classes, the optimal creation order would be:
+- `AbsoluteDistance`, `ColorContainer`, `DegreesRotation`, `Equation`, `Location`, `PreparedColorContainer`, `RadiansRotation`
+- `AnimationToRunParams`, `RunningAnimationParams`
+- `AnimationParameter`
+- `AnimationInfo`
+- `StripInfo`
+- `Section`
+- `CurrentStripColor`
 
-started: Boolean
-connected: Boolean
+#### `AbsoluteDistance`
 
-runningAnimations: Map<String, RunningAnimationParams>
-sections: Map<String, Section>
-supportedAnimations: Map<String, AnimationInfo>
-stripInfo: StripInfo
+- `x` (double) (`0.0`)
+- `y` (double) (`0.0`)
+- `z` (double) (`0.0`)
 
-onConnectCallback: (ip: String, port: Int) -> Any
-onDisconnectCallback: (ip: String, port: Int) -> Any
-onUnableToConnectCallback: (ip: String, port: Int) -> Any
+#### `AnimationInfo`
 
-onReceiveCallback: (data: String) -> Any
-onNewAnimationInfoCallback: (AnimationInfo) -> Any
-onNewCurrentStripColorCallback: (CurrentStripColor) -> Any
-onNewEndAnimationCallback: (EndAnimation) -> Any
-onNewMessageCallback: (Message) -> Any
-onNewRunningAnimationParamsCallback: (RunningAnimationParams) -> Any
-onNewSectionCallback: (Section) -> Any
-onNewStripInfoCallback: (StripInfo) -> Any
-```
+- `name` (string) (`""`)
+- `abbr` (string) (`""`)
+- `description` (string) (`""`)
+- `runCountDefault` (int) (`0`)
+- `minimumColors` (int) (`0`)
+- `unlimitedColors` (boolean) (`false`)
+- `dimensionality` (set(string)) (`setOf()`)
+- `intParams` (map(string to `AnimationParameter<Int>`)) (`mapOf()`)
+- `doubleParams` (map(string to `AnimationParameter<Double>`)) (`mapOf()`)
+- `stringParams` (map(string to `AnimationParameter<String>`)) (`mapOf()`)
+- `locationParams` (map(string to `AnimationParameter<Location>`)) (`mapOf()`)
+- `distanceParams` (map(string to `AnimationParameter<AbsoluteDistance/PercentDistance>`)) (`mapOf()`)
+- `rotationParams` (map(string to `AnimationParameter<DegreesRotation/RadiansRotation>`)) (`mapOf()`)
+- `equationParams` (map(string to `AnimationParameter<Equation>`)) (`mapOf()`)
 
-### Methods
+#### `AnimationParameter<T>`
 
-#### Start
+- `name` (string) (`""`)
+- `description` (string) (`""`)
+- `default` (nullable of type `T`) (`null`)
 
-```
-if started
-  return
+#### `AnimationToRunParams`
 
-clear runningAnimations
-clear sections
-clear supportedAnimations
-stripInfo = null
+- `animation` (string) (`""`)
+- `colors` (list(`ColorContainer`/`PreparedColorContainer`)) (`listOf()`)
+- `id` (string) (`""`)
+- `section` (string) (`""`)
+- `runCount` (int) (`0`)
+- `intParams` (map(string to int)) (`mapOf()`)
+- `doubleParams` (map(string to double)) (`mapOf()`)
+- `stringParams` (map(string to string)) (`mapOf()`)
+- `locationParams` (map(string to `Location`)) (`mapOf()`)
+- `distanceParams` (map(string to `AbsoluteDistance`/`PercentDistance`)) (`mapOf()`)
+- `rotationParams` (map(string to `DegreesRotation`/`RadiansRotation`)) (`mapOf()`)
+- `equationParams` (map(string to `Equation`)) (`mapOf()`)
 
-started = true
+#### `ColorContainer`
 
-try
-  connect socket	// timeout 2s
-except
-  call onUnableToConnectCallback
-  started = false
-  connected = false
-  return
+- `colors` (list(int)) (`listOf()`)
 
-connected = true
-call onConnectCallback
+#### `DegreesRotation`
 
-start receive loop
-```
+- `xRotation` (double) (`0.0`)
+- `yRotation` (double) (`0.0`)
+- `zRotation` (double) (`0.0`)
+- `rotationOrder` (list(string)) (`listOf("ROTATE_X", "ROTATE_Z"`)
 
-#### End
+#### `Equation`
 
-```
-if not connected
-  return
-started = false
-connected = false
-close socket
-stop receive loop
-```
+- `coefficients` (list(int)) (`listOf()`)
 
-### Receive Loop
+#### `Location`
 
-```
-while connected
-  try
-    read input from socket
-  except io error
-    started = false
-    connected = false
-    call onDisconnectCallback
-    return
+- `x` (double) (`0.0`)
+- `y` (double) (`0.0`)
+- `z` (double) (`0.0`)
 
-  append partialData to beginning of input
-  clear partialData
-  split input into inputList by ';;;'
-  if last input in inputList is incomplete
-    save last input to partialData
-    remove last input from inputList
+#### `RadiansRotation`
 
-  for splitData in inputList
-    if splitData is an empty string
-      continue
+- `xRotation` (double) (`0.0`)
+- `yRotation` (double) (`0.0`)
+- `zRotation` (double) (`0.0`)
+- `rotationOrder` (list(string)) (`listOf("ROTATE_X", "ROTATE_Z"`)
 
-    call onReceiveCallback
-    
-    data = decodeJson(splitData)
+#### `RunningAnimationParams`
 
-    if data is AnimationInfo
-      add instance to supported animations
-      call onNewAnimationInfoCallback
-    else if data is AnimationToRunParams
-      print warning "Receiving AnimationToRunParams is not supported by client"
-    else if data is ClientParams
-      print warning "Receiving ClientParams is not supported by client"
-    else if data is Command
-      print warning "Receiving Command is not supported by client"
-    else if data is CurrentStripColor
-      call onNewCurrentStripColorCallback
-    else if data is EndAnimation
-      call onNewEndAnimationCallback
-      remove animation from running animations
-    else if data is Message
-      call onNewMessageCallback
-    else if data is RunningAnimationParams
-      call onNewRunningAnimationParamsCallback
-      add instance to running animations
-    else if data is Section
-      call onNewSectionCallback
-      add instance to sections
-    else if data is StripInfo
-      set stripInfo to instance
-      call onNewStripInfoCallback
-    else
-      print warning "Unrecognized data type: $data"
-```
+- `animationName` (string) (`""`)
+- `colors` (list(`PreparedColorContainer`))
+- `id` (string) (`""`)
+- `section` (string) (`""`)
+- `runCount` (int) (`0`)
+- `intParams` (map(string to int)) (`mapOf()`)
+- `doubleParams` (map(string to double)) (`mapOf()`)
+- `stringParams` (map(string to string)) (`mapOf()`)
+- `locationParams` (map(string to `Location`)) (`mapOf()`)
+- `distanceParams` (map(string to `AbsoluteDistance`)) (`mapOf()`)
+- `rotationParams` (map(string to `RadiansRotation`)) (`mapOf()`)
+- `equationParams` (map(string to `Equation`)) (`mapOf()`)
+- `sourceParams` (`AnimationToRunParams`)
+
+#### `StripInfo`
+
+- `numLEDs` (int) (`0`)
+- `pin` (nullable int) (`null`)
+- `renderDelay` (int) (`10`)
+- `isRenderLoggingEnabled` (boolean) (`false`)
+- `renderLogFile` (string) (`""`)
+- `rendersBetweenLogSaves` (int) (`1000`)
+- `is1DSupported` (boolean) (`true`)
+- `is2DSupported` (boolean) (`false`)
+- `is3DSupported` (boolean) (`false`)
+- `ledLocations` (list(`Location`)) (`listOf()`)
+
+#### `Section`
+
+- `name` (string) (`""`)
+- `pixels` (list(int)) (`listOf()`)
+- `parentSectionName` (string) (`""`)
+
+### HTTP Endpoints
+
+#### GET Endpoints
+
+- `/animation/{name}` (`getAnimationInfo`, requires one string parameter) (returns `AnimationInfo`)
+- `/animations/names` (`getSupportedAnimationNames`) (returns list(string))
+- `/animations` (`getSupportedAnimations`) (returns list(`AnimationInfo`))
+- `/animations/map` (`getSupportedAnimationsMap`) (returns map(string to `AnimationInfo`))
+- `/running` (`getRunningAnimations`) (returns map(string to `RunningAnimationParams`))
+- `/running/ids` (`getRunningAnimationsIds`) (returns list(string))
+- `/running/{id}` (`getRunningAnimationParams`, requires one string parameter) (returns `RunningAnimationParams`)
+- `/sections` (`getSections`) (returns list(`Section`))
+- `/sections/map` (`getSectionsMap`) (returns map(string to `Section`))
+- `/section/{name}` (`getSection`, requires one string parameter) (returns `Section`)
+- `/strip/info` (`getStripInfo`) (returns `StripInfo`)
+- `/strip/color` (`getCurrentStripColor`) (returns list(int))
+
+##### Additional Functions
+
+- `getFullStripSection` (calls `getSection` with `"fullStrip"`)
+
+#### POST Endpoints
+
+- `/sections` (`createNewSection`, requires one `Section` parameter) (returns `Section`)
+- `/start` (`startAnimation`, requires one `AnimationToRunParams` parameter) (returns `RunningAnimationParams`)
+- `/strip/clear` (`clearStrip`) (no return)
+
+#### DELETE Endpoints
+
+- `/running/{id}` (`endAnimation`, requires one string parameter) (returns `RunningAnimationParams`)
+
+##### Additional Functions
+
+- `endAnimation` or `endAnimationFromParams`, requiring one `RunningAnimationParams` parameter (calls `endAnimation` with `param.id`)
