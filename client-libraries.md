@@ -47,13 +47,13 @@ Because some classes use other classes, the optimal creation order would be:
 - `minimumColors` (int) (`0`)
 - `unlimitedColors` (boolean) (`false`)
 - `dimensionality` (set(string)) (`setOf()`)
-- `intParams` (map(string to `AnimationParameter<Int>`)) (`mapOf()`)
-- `doubleParams` (map(string to `AnimationParameter<Double>`)) (`mapOf()`)
-- `stringParams` (map(string to `AnimationParameter<String>`)) (`mapOf()`)
-- `locationParams` (map(string to `AnimationParameter<Location>`)) (`mapOf()`)
-- `distanceParams` (map(string to `AnimationParameter<AbsoluteDistance/PercentDistance>`)) (`mapOf()`)
-- `rotationParams` (map(string to `AnimationParameter<DegreesRotation/RadiansRotation>`)) (`mapOf()`)
-- `equationParams` (map(string to `AnimationParameter<Equation>`)) (`mapOf()`)
+- `intParams` (list(`AnimationParameter<Int>`)) (`mapOf()`)
+- `doubleParams` (list(`AnimationParameter<Double>`)) (`mapOf()`)
+- `stringParams` (list(`AnimationParameter<String>`)) (`mapOf()`)
+- `locationParams` (list(`AnimationParameter<Location>`)) (`mapOf()`)
+- `distanceParams` (list(`AnimationParameter<AbsoluteDistance/PercentDistance>`)) (`mapOf()`)
+- `rotationParams` (list(`AnimationParameter<DegreesRotation/RadiansRotation>`)) (`mapOf()`)
+- `equationParams` (list(`AnimationParameter<Equation>`)) (`mapOf()`)
 
 #### `AnimationParameter<T>`
 
