@@ -97,6 +97,11 @@ Because some classes use other classes, the optimal creation order would be:
 - `y` (double) (`0.0`)
 - `z` (double) (`0.0`)
 
+#### `PreparedColorContainer`
+
+- `colors` (list(int))
+- `originalColors` (list(int))
+
 #### `RadiansRotation`
 
 - `xRotation` (double) (`0.0`)
