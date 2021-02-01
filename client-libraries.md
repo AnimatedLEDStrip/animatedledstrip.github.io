@@ -30,7 +30,6 @@ Because some classes use other classes, the optimal creation order would be:
 - `AnimationInfo`
 - `StripInfo`
 - `Section`
-- `CurrentStripColor`
 
 #### `AbsoluteDistance`
 
