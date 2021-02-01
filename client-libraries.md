@@ -9,7 +9,7 @@ Currently, client libraries are written for the following languages:
 - [Go](https://github.com/AnimatedLEDStrip/client-go) (needs update to be compatible with 1.0.0)
 - [Kotlin/MPP, supporting Kotlin/JVM and Kotlin/JS](https://github.com/AnimatedLEDStrip/client-kotlin-mpp)
 - [Python 3](https://github.com/AnimatedLEDStrip/client-python) (needs release to be compatible with 1.0.0)
-- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby) (needs update to be compatible with 1.0.0)
+- [Ruby](https://github.com/AnimatedLEDStrip/client-ruby) (needs release to be compatible with 1.0.0)
 - Rust (incomplete)
 
 ## Creating a New Client Library
