@@ -148,7 +148,7 @@ Because some classes use other classes, the optimal creation order would be:
 #### GET Endpoints
 
 - `/animation/{name}` (`getAnimationInfo`, requires one string parameter) (returns `AnimationInfo`)
-- `/animations/names` (`getSupportedAnimationNames`) (returns list(string))
+- `/animations/names` (`getSupportedAnimationsNames`) (returns list(string))
 - `/animations` (`getSupportedAnimations`) (returns list(`AnimationInfo`))
 - `/animations/map` (`getSupportedAnimationsMap`) (returns map(string to `AnimationInfo`))
 - `/running` (`getRunningAnimations`) (returns map(string to `RunningAnimationParams`))
