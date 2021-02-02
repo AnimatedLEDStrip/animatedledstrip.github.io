@@ -1,3 +1,9 @@
+---
+title: Home
+nav_order: 1
+permalink: /
+---
+
 # AnimatedLEDStrip
 The AnimatedLEDStrip set of libraries are meant to simplify the process of running animations on an LED strip to a point that anyone can do it.
 The core of the libraries supports concurrency, allowing multiple animations to be run simultaneously, even over the same part of the strip.
