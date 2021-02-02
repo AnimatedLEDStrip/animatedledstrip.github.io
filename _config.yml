@@ -2,11 +2,10 @@ title: AnimatedLEDStrip
 description: 
 google_analytics: 
 show_downloads: false
-theme: minimal-mistakes-jekyll
+remote_theme: pmarsceill/just-the-docs
 
 gems:
   - jekyll-mentions
-  - minimal-mistakes-jekyll
 
 github:
   repository_url: https://github.com/AnimatedLEDStrip
