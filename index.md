@@ -12,8 +12,6 @@ AnimatedLEDStrip is designed to make running fancy animations on LEDs easy, with
 
 ---
 
-Hi sarah
-
 ## Getting Started
 
 AnimatedLEDStrip gives you many options for how you integrate it into your project.

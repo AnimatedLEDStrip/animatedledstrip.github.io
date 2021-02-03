@@ -14,7 +14,7 @@ The AnimatedLEDStrip server can be configured via the command line and/or with a
 - `--persist` - Persist animations across restarts
 - `--nopersist` - Don't persist animations across restarts (overrides --persist and persist=true in config)
 - `-n, --numleds NUM` - Specify number of LEDs in the strip (default `240`)
-- `-P, --pin PIN` - Specify the pin number the LED strip is connected to (default `12`)
+- `-p, --pin PIN` - Specify the pin number the LED strip is connected to (default `12`)
 - `--render-delay DELAY` - Specify the time in milliseconds between renders of the LED strip (default `10`)
 - `--log-renders` - Enable strip color logging
 - `--log-file` - Specify the output file name for strip color logging
@@ -30,7 +30,7 @@ The AnimatedLEDStrip server can be configured via the command line and/or with a
 
 Command line arguments always take priority over the config file.
 
-## `log-level`
+### `log-level`
 
 The minimum severity level for logs can be set using `log-level=[error|warn|info|debug|verbose]`.
 
