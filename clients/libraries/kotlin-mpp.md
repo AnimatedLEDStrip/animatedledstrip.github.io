@@ -1,16 +1,17 @@
 ---
-title: Kotlin/MPP Client Library
-nav_order: 1
+title: Kotlin/MPP
 parent: Client Libraries
 grand_parent: Clients
 ---
 
+# AnimatedLEDStrip Client Libary for Kotlin/MPP
+
 This library allows a Kotlin/JVM or Kotlin/JS client to communicate with an AnimatedLEDStrip server.
 
 ## Creating an `ALSHttpClient`
-To create a HTTP client, run `ALSHttpClient(clientEngine, ip)`.
 
-> `clientEngine` is a [Ktor `HttpClientEngineFactory`](https://ktor.io/docs/http-client-engines.html)
+A new client is created with `ALSHttpClient(clientEngine, ip)`.
+`clientEngine` is a [Ktor `HttpClientEngineFactory`](https://ktor.io/docs/http-client-engines.html)
 
 ```kotlin
 val client = ALSHttpClient(CIO, ip = "10.0.0.254")
@@ -29,4 +30,4 @@ install(JsonFeature) {
 
 ## Communicating with the Server
 
-This library follows the conventions laid out for [AnimatedLEDStrip client libraries](clients/client-libraries).
+This library follows the conventions laid out for [AnimatedLEDStrip client libraries](/clients/client-libraries).
