@@ -11,7 +11,6 @@ The AnimatedLEDStrip server can be configured via the command line and/or with a
 
 - `--log-level [error|warn|info|debug|verbose]` - Set the minimum severity level for logs that will be printed
 - `-f, --config FILE` - Specify a config to load instead of `/etc/leds/led.config`
-- `-p, --ports PORT [PORT...]` - Add ports for clients to connect to
 - `--persist` - Persist animations across restarts
 - `--nopersist` - Don't persist animations across restarts (overrides --persist and persist=true in config)
 - `-n, --numleds NUM` - Specify number of LEDs in the strip (default `240`)
@@ -34,10 +33,6 @@ Command line arguments always take priority over the config file.
 ## `log-level`
 
 The minimum severity level for logs can be set using `log-level=[error|warn|info|debug|verbose]`.
-
-### `ports`
-
-The ports used can be set using a space-delimited list of port numbers (e.g. `ports=5 6`).
 
 ### `persist`
 
