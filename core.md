@@ -4,6 +4,8 @@ nav_order: 2
 has_children: true
 ---
 
+[GitHub Repo](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip){: .btn }
+
 # AnimatedLEDStrip Core Library
 
 The AnimatedLEDStrip core library handles:
