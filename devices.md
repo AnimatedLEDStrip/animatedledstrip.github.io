@@ -1,6 +1,6 @@
 ---
 title: Devices
-nav_order: 4
+nav_order: 5
 ---
 
 # AnimatedLEDStrip Device Libraries
