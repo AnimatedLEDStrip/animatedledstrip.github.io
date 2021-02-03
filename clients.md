@@ -4,6 +4,8 @@ nav_order: 2
 has_children: true
 ---
 
+# Clients
+
 ## Libraries
 
 AnimatedLEDStrip provides libraries that can be used by your program to communicate with an AnimatedLEDStrip server.

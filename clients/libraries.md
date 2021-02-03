@@ -2,6 +2,7 @@
 title: Client Libraries
 nav_order: 1
 has_children: true
+parent: Clients
 ---
 
 Currently, client libraries are written for the following languages:
