@@ -2,6 +2,7 @@
 title: Kotlin/MPP Client Library
 nav_order: 1
 parent: Client Libraries
+grand_parent: Clients
 ---
 
 This library allows a Kotlin/JVM or Kotlin/JS client to communicate with an AnimatedLEDStrip server.
