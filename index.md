@@ -7,7 +7,7 @@ permalink: /
 # Control LEDs with ease and run stunning animations
 {: .fs-9 }
 
-AnimatedLEDStrip is designed to make running fancy animations on LEDs easy, with over 20 animations already provided.
+AnimatedLEDStrip is designed to make running fancy animations on LEDs easy, with over 20 animations already provided
 {: .fs-6 .fw-300 }
 
 ---

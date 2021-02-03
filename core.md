@@ -59,10 +59,11 @@ It is also given a `CoroutineScope` to run the animation in, a section to run th
 A top-level animation is created by the `LEDStripAnimationManager`.
 A non-top-level animation is created by a `RunningAnimation` as part of the animation it is running.
 
-The `RunningAnimatoin` creates a new Coroutine to run the animation in, and then starts the animation.
+The `RunningAnimation` creates a new Coroutine to run the animation in, and then starts the animation.
 The animation will be run repeatedly until either the coroutine is stopped, or the `runs` counter exceeds the number of runs specified by the parameters (the `runCount` parameter).
-A negative `runCount` will tell the animation to run the default number of times, as specified in the animation info.
+A negative `runCount` will tell the animation to run the default number of times, as specified in the [animation info](/core/new-animations#animationinfo).
 
 ### How Animations are Defined
 
 See [Defining a New Animation](/core/new-animation)
+
