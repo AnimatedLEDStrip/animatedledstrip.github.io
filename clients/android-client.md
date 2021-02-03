@@ -4,7 +4,7 @@ nav_order: 2
 parent: Clients
 ---
 
-#### [Repo](https://github.com/AnimatedLEDStrip/android-client)
+[GitHub Repo](https://github.com/AnimatedLEDStrip/android-client){: .btn }
 
 # AnimatedLEDStrip Android Client
 

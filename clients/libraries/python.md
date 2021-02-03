@@ -4,6 +4,8 @@ parent: Client Libraries
 grand_parent: Clients
 ---
 
+[GitHub Repo](https://github.com/AnimatedLEDStrip/client-python){: .btn }
+
 # AnimatedLEDStrip Client Library for Python
 
 This library allows a Python 3 client to communicate with an AnimatedLEDStrip server.

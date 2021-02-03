@@ -4,6 +4,8 @@ parent: Client Libraries
 grand_parent: Clients
 ---
 
+[GitHub Repo](https://github.com/AnimatedLEDStrip/client-go){: .btn }
+
 # AnimatedLEDStrip Client Library for Go
 
 This library allows a Go client to communicate with an AnimatedLEDStrip server.

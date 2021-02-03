@@ -4,6 +4,8 @@ parent: Client Libraries
 grand_parent: Clients
 ---
 
+[GitHub Repo](https://github.com/AnimatedLEDStrip/client-kotlin-mpp){: .btn }
+
 # AnimatedLEDStrip Client Libary for Kotlin/MPP
 
 This library allows a Kotlin/JVM or Kotlin/JS client to communicate with an AnimatedLEDStrip server.

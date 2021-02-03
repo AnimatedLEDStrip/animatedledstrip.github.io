@@ -4,6 +4,8 @@ parent: Client Libraries
 grand_parent: Clients
 ---
 
+[GitHub Repo](https://github.com/AnimatedLEDStrip/client-ruby){: .btn }
+
 # AnimatedLEDStrip Client Library for Ruby
 
 This library allows a Ruby client to communicate with an AnimatedLEDStrip server.
