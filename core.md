@@ -1,5 +1,5 @@
 ---
-title: core
+title: Core
 nav_order: 2
 ---
 
