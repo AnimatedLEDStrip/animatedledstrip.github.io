@@ -12,6 +12,8 @@ AnimatedLEDStrip is designed to make running fancy animations on LEDs easy, with
 
 ---
 
+Hi sarah
+
 ## Getting Started
 
 AnimatedLEDStrip gives you many options for how you integrate it into your project.
@@ -26,7 +28,7 @@ The AnimatedLEDStrip project comes with many features, including:
 - Running animations on the LEDs, including running multiple animations simultaneously
 - Customizing how those animations are run
 - Identifying sections of the strip that can be controlled as if they were an independent strip
-- An HTTP server that clients can communicate with to control the strip
+
 
 # AnimatedLEDStrip
 The AnimatedLEDStrip set of libraries are meant to simplify the process of running animations on an LED strip to a point that anyone can do it.
