@@ -40,42 +40,6 @@ An `AnimationParameter` requires a name, which will be used to identify the para
 AnimationParameter("paramName", "Param description", default)
 ```
 
-### Animation Parameter Types
-
-There are seven different types for animation parameters, but only three are types that are part of the language (`Int`, `Double`, `String`).
-The other four are specially created for animations.
-These include:
-- `Location`
-- `Distance`
-- `Rotation`
-- `Equation`
-
-#### `Location`
-
-A location is a point in three-dimensional space, taking three `Double` arguments for the x, y, and z coordinates.
-The distance between two `Location`s can be calculated using the `distanceFrom(other: Location)` function.
-
-#### `Distance`
-
-A distance is a set of three values, specifying how far an animation should travel in the x, y, and z directions.
-There are two types of distances, `AbsoluteDistance`s and `PercentDistance`s
-An `AbsoluteDistance` is a distance with the exact distance in each direction.
-A `PercentDistance` is a distance that specifies a percentage of the full distance covered by LEDs in that direction that should be traveled.
-All `PercentDistance`s are converted to `AbsoluteDistance`s when the parameters for an animation are being prepared.
-
-#### `Rotation`
-
-A rotation is a set of three values, specifying how far to rotate points around the x, y, and z axes, plus a list of `RotationAxis`es that specify what order to perform the rotations.
-There are two types of rotations, `RadiansRotation`s and `DegreesRotation`s.
-All `DegreesRotation`s are converted to `RadiansRotation`s when the parameters for an animation are being prepared, because the `sin` and `cos` functions use radians.
-
-#### `Equation`
-
-An `Equation` parameter specifies coefficients for x in an equation.
-Each coefficient corresponds to the term with the degree equal to its index in the coefficients list.
-For example, `Equation(5.0, 3.3, 1.3, 0.0, 2.4)` represents the equation `2.4x^4 + 1.3x^2 + 3.3x + 5.0`.
-Animations such as [Pixel Run](Pixel-Run) use this to determine what line the pixel will follow.
-
 ### Example `AnimationInfo`
 
 ```kt
@@ -103,6 +67,42 @@ Animation.AnimationInfo(
                                                PercentDistance(0.1, 0.1, 0.1))),
 )
 ```
+
+## Animation Parameter Types
+
+There are seven different types for animation parameters, but only three are types that are part of the language (`Int`, `Double`, `String`).
+The other four are specially created for animations.
+These include:
+- `Location`
+- `Distance`
+- `Rotation`
+- `Equation`
+
+### `Location`
+
+A location is a point in three-dimensional space, taking three `Double` arguments for the x, y, and z coordinates.
+The distance between two `Location`s can be calculated using the `Location.distanceFrom(other: Location)` function.
+
+### `Distance`
+
+A distance is a set of three values, specifying how far an animation should travel in the x, y, and z directions.
+There are two types of distances, `AbsoluteDistance`s and `PercentDistance`s
+An `AbsoluteDistance` is a distance with the exact distance in each direction.
+A `PercentDistance` is a distance that specifies a percentage of the full distance covered by LEDs in that direction that should be traveled (`100.0` represents the full distance).
+All `PercentDistance`s are converted to `AbsoluteDistance`s when the parameters for an animation are being prepared.
+
+### `Rotation`
+
+A rotation is a set of three values, specifying how far to rotate points around the x, y, and z axes, plus a list of `RotationAxis`es that specify what order to perform the rotations.
+There are two types of rotations, `RadiansRotation`s and `DegreesRotation`s.
+All `DegreesRotation`s are converted to `RadiansRotation`s when the parameters for an animation are being prepared, because the `sin` and `cos` functions use radians.
+
+### `Equation`
+
+An `Equation` parameter specifies coefficients for x in an equation.
+Each coefficient corresponds to the term with the degree equal to its index in the coefficients list.
+For example, `Equation(5.0, 3.3, 1.3, 0.0, 2.4)` represents the equation `2.4x^4 + 1.3x^2 + 3.3x + 5.0`.
+Animations such as [Pixel Run](Pixel-Run) use this to determine what line the pixel will follow.
 
 ## Defined Animations
 

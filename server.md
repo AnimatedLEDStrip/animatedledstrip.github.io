@@ -21,7 +21,7 @@ The server library adds two features to the core library:
 
 A server implementation for the Raspberry Pi can be installed by running:
 
-```
+```bash
 curl -s https://animatedledstrip.github.io/install/install-pi-server.sh | sudo bash
 ```
 
