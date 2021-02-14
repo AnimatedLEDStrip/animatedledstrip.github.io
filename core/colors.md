@@ -11,7 +11,7 @@ A `ColorContainer` can hold a variable number of colors and will prepare the col
 A `PreparedColorContainer` is the prepared form of the `ColorContainer` and is used by the animation.
 
 Colors can be set and retrieved using a variety of methods. Examples include:
-```kt
+```kotlin
 val a = ColorContainer(0xFF, 0xFF00FF)        // Construction with a variable number of arguments
 val b = ColorContainer(0xFFFF)
 
@@ -33,7 +33,7 @@ a[0, 3] = 0x0                                 // a.colors = [0x0,  0xFF00, 0xFFF
 The `ColorContainer` class contains methods for grayscaling and inverting the colors inside it.
 There are slight differences between `grayscale()` and `grayscaled()`, and between `invert()` and `inverse()`.
 For example:
-```kt
+```kotlin
 val c = ColorContainer(0xFF00FF, 0xFFFF00)
 c.invert()                                            // c.colors = [0x00FF00, 0x0000FF]
 val d = c.inverse()                                   // c.colors = [0x00FF00, 0x0000FF]

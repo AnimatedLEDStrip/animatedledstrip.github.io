@@ -31,7 +31,8 @@ The AnimatedLEDStrip server library is combined with a device library to run a s
 Both are added as dependencies and a short main method is added.
 
 Example main method:
-```
+
+```kotlin
 fun main(args: Array<String>) {
     startServer(args, WS281xCompat::class)
 }
