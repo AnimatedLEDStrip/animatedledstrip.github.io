@@ -36,13 +36,13 @@ Animation-specific parameters come in seven types: `Int`, `Double`, `String`, `L
 To specify a parameter that can be modified, such as the delay between movements or the rotation of a plane, you add an `AnimationParameter` to the appropriate parameter list.
 An `AnimationParameter` requires a name, which will be used to identify the parameter, a description, which will be used to when creating the wiki page about this animation, and can take an optional default value to use if the parameter is not set.
 
-```kt
+```kotlin
 AnimationParameter("paramName", "Param description", default)
 ```
 
 ### Example `AnimationInfo`
 
-```kt
+```kotlin
 Animation.AnimationInfo(
     name = "Fireworks",
     abbr = "FWK",
@@ -116,7 +116,7 @@ This scope should be used for all child coroutines because it allows the full an
 
 ### Example Defined Animation
 
-```kt
+```kotlin
 val sparkle = DefinedAnimation(
     Animation.AnimationInfo(
         name = "Sparkle",
@@ -173,7 +173,7 @@ If the `animationDuration` parameter for the specific animation is set to a non-
 
 ### Example Animation Group
 
-```kt
+```kotlin
 val sortingAnimations = RandomizedAnimationGroup(
     groupInfo = Animation.AnimationInfo(name = "Sorting",
                                         abbr = "SRT",
