@@ -29,9 +29,6 @@ parent: Animations
 |unlimited colors|false|
 |dimensionality|[ONE_DIMENSIONAL]|
 
-|Parameter|Type|Default Value|Description|
-|:-:|:-:|:-:|:-:|
-
 ## Description
 Runs all of the different sorting animations currently defined.
 

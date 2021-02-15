@@ -19,9 +19,6 @@ parent: Animations
 |unlimited colors|false|
 |dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
-|Parameter|Type|Default Value|Description|
-|:-:|:-:|:-:|:-:|
-
 ## Description
 Set the strip to a color.
 
