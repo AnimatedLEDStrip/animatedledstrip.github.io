@@ -2,6 +2,7 @@
 title: Defining a New Animation
 nav_order: 1
 parent: Core
+has_children: true
 ---
 
 # Creating a New Animation
