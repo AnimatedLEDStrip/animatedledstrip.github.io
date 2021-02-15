@@ -23,8 +23,8 @@ parent: Animations
 |:-:|:-:|:-:|:-:|
 |interMovementDelay|Int|15|Delay between movements in the animation|
 |movementPerIteration|Double|10.0|How far to move during each iteration of the animation|
-|center|[Location](core/new-animations.html#location)|Center of all pixels|The center of the splat|
-|distance|[Distance](core/new-animations.html#distance)|100.0%, 100.0%, 100.0%|How far the splat should reach|
+|center|[Location](/core/new-animations.html#location)|Center of all pixels|The center of the splat|
+|distance|[Distance](/core/new-animations.html#distance)|100.0%, 100.0%, 100.0%|How far the splat should reach|
 
 ## Description
 Similar to a [Ripple](Ripple) but the pixels don't fade back.
