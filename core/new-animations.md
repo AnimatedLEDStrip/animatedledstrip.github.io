@@ -154,8 +154,7 @@ val sparkle = DefinedAnimation(
 
 ### Animation Utility Functions
 
-*TODO*
-
+There are a multitude of 
 ## Animation Groups
 
 An Animation Group is a list of animations that can be run one after the other.

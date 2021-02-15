@@ -4,12 +4,12 @@ nav_order: 3
 parent: Core
 ---
 
-# Managing Pixel Colors in the AnimatedLEDStrip Library
+# Pixel Colors in the AnimatedLEDStrip Library
 
-The AnimatedLEDStrip library uses the concept of a LED having four colors "assigned" to it:
+The AnimatedLEDStrip library uses the concept of a LED pixel having four colors "assigned" to it:
 - Actual Color - The color you see on the strip
 - Fade Color - The color the strip is currently at as it fades to the prolonged color
-- Prolonged Color - The base color the pixel will fade or revert to
+- Prolonged Color - The color the pixel will fade or revert to
 - Temporary Color - A color that overrides the fade and prolonged colors until the pixel is reverted
 
 When the `LEDStripRenderer` is ready to send a color to a pixel in the strip, it asks the `PixelColor` associated with the pixel to figure out what color should be sent.
