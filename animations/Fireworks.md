@@ -24,7 +24,7 @@ parent: Animations
 |interMovementDelay|Int|30|Delay between movements in the ripple animation|
 |interAnimationDelay|Int|500|Time between start of one animation and start of the next|
 |movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
-|distance|Distance|10.0%, 10.0%, 10.0%|Distance each firework should travel|
+|distance|[Distance](core/new-animations#distance)|10.0%, 10.0%, 10.0%|Distance each firework should travel|
 
 ## Description
 Runs [Ripple](Ripple) animations from random center points within the defined locations of all pixels, travelling a defined distance.

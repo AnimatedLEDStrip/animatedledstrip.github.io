@@ -25,16 +25,12 @@ parent: Animations
 |maxInterAnimationDelay|Int|1000|Maximum time between start of one pixel run and start of the next|
 |movementPerIteration|Double|1.0|How far to move along the X axis during each iteration of the animation|
 |maximumInfluence|Double|1.0|How far away from the line a pixel can be affected|
-|offset|Distance|0.0, 0.0, 0.0|Offset of the line in the XYZ directions|
-|rotation|Rotation|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the line around the XYZ axes|
-|lineEquation|Equation|0x⁰|The equation representing the line the the pixel will follow|
+|offset|[Distance](core/new-animations#distance)|0.0, 0.0, 0.0|Offset of the line in the XYZ directions|
+|rotation|[Rotation](core/new-animations#rotation)|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the line around the XYZ axes|
+|lineEquation|[Equation](core/new-animations#equation)|0x⁰|The equation representing the line the pixel will follow|
 
 ## Description
-Watch pixels race each other along the strip.
-A color is chosen randomly, then a pixel is sent down the strip.
+Watch pixels race each other along a line.
+A color is chosen randomly from `colors`, then a pixel is sent down the strip.
 After waiting for up to `maxInterAnimationDelay` milliseconds, another pixel is sent.
-
-Note that in the animation signature that there are a couple points where the slope of the line gets shallower (meaning the pixel is 'moving' faster).
-If you look closely, you'll see that there are actually two [Pixel Run](Pixel-Run) subanimations at the same spot engaged in a race condition - quite fitting for this animation.
-This happens because when an animation such as Pixel Run changes a pixel's temporary color, it puts a lock on that pixel so the pixel's color doesn't change until it's done with that pixel.
 

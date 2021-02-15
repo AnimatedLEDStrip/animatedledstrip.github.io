@@ -24,10 +24,10 @@ parent: Animations
 |interMovementDelay|Int|30|Delay between movements in the animation|
 |interAnimationDelay|Int|500|Time between start of one animation and start of the next|
 |movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
-|center|Location|Center of all pixels|The center of the ripple|
-|distance|Distance|100.0%, 100.0%, 100.0%|How far the ripple should travel|
+|center|[Location](core/new-animations#location)|Center of all pixels|The center of the ripple|
+|distance|[Distance](core/new-animations#distance)|100.0%, 100.0%, 100.0%|How far the ripple should travel|
 
 ## Description
-Starts two [Meteor](Meteor) animations running in opposite directions from `center`, stopping after traveling `distance` or at the end of the strip/section, whichever comes first.
-Does not wait for the Meteor animations to be complete before returning, giving a ripple-like appearance when run continuously.
+Starts at a center point and travels in a sphere (or circle or two points) away from that center, setting LEDs that then fade back.
+Does not wait for the ripple to complete before starting the next, only waiting `interAnimationDelay` milliseconds.
 

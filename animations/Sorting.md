@@ -30,5 +30,5 @@ parent: Animations
 |dimensionality|ONE_DIMENSIONAL|
 
 ## Description
-Runs all of the different sorting animations currently defined.
+Runs all of the sorting animations currently defined.
 
