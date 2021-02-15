@@ -12,17 +12,17 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Sparkle`|
-|abbr|`SPK`|
+|name|Sparkle|
+|abbr|SPK|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|sparkleDuration|`Int`|`50`|Length of sparkle|
-|maxDelayBeforeSparkle|`Int`|`5000`|Maximum amount of time before a pixel will sparkle|
+|sparkleDuration|Int|50|Length of sparkle|
+|maxDelayBeforeSparkle|Int|5000|Maximum amount of time before a pixel will sparkle|
 
 ## Description
 Each LED is changed to `colors[0]` for `sparkleDuration` milliseconds before reverting.

@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Bubble Sort`|
-|abbr|`BST`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|name|Bubble Sort|
+|abbr|BST|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`5`|Delay between sorting movements|
+|interMovementDelay|Int|5|Delay between sorting movements|
 
 ## Description
 Visualization of bubble sort.

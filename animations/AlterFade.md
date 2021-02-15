@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`AlterFade`|
-|abbr|`ALF`|
+|name|AlterFade|
+|abbr|ALF|
 |runCountDefault|Endless|
-|minimum colors|`2`|
-|unlimited colors|`true`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|2|
+|unlimited colors|true|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|alternationPeriod|`Int`|`1000`|Delay in milliseconds between alternations|
+|alternationPeriod|Int|1000|Delay in milliseconds between alternations|
 
 ## Description
 Strip fades between each color in colors, delaying `alternationPeriod` milliseconds between changes.

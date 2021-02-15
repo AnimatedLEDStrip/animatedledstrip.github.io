@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Sparkle Fade`|
-|abbr|`SPF`|
+|name|Sparkle Fade|
+|abbr|SPF|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|maxDelayBeforeSparkle|`Int`|`5000`|Maximum amount of time before a pixel will sparkle|
+|maxDelayBeforeSparkle|Int|5000|Maximum amount of time before a pixel will sparkle|
 
 ## Description
 Similar to [Sparkle](Sparkle) but pixels fade back.

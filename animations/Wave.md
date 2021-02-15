@@ -12,19 +12,19 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Wave`|
-|abbr|`WAV`|
+|name|Wave|
+|abbr|WAV|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`30`|Delay between movements in the animation|
-|interAnimationDelay|`Int`|`500`|Time between start of one animation and start of the next|
-|movementPerIteration|`Double`|`1.0`|How far to move during each iteration of the animation|
-|rotation|`Rotation`|`RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])`|Rotation of the plane around the XYZ axes|
+|interMovementDelay|Int|30|Delay between movements in the animation|
+|interAnimationDelay|Int|500|Time between start of one animation and start of the next|
+|movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
+|rotation|Rotation|RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])|Rotation of the plane around the XYZ axes|
 
 ## Description
 Wipes a plane through all pixels, leaving a fading trail behind.

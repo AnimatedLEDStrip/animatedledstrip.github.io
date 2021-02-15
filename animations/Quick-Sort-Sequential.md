@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Quick Sort (Sequential)`|
-|abbr|`QKS`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|name|Quick Sort (Sequential)|
+|abbr|QKS|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`25`|Delay between sorting movements|
+|interMovementDelay|Int|25|Delay between sorting movements|
 
 ## Description
 Visualization of quick sort.

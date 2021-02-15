@@ -12,12 +12,12 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Color`|
-|abbr|`COL`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|name|Color|
+|abbr|COL|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

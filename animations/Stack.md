@@ -12,21 +12,21 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Stack`|
-|abbr|`STK`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|name|Stack|
+|abbr|STK|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`10`|Delay between movements in the animation|
-|movementPerIteration|`Double`|`1.0`|How far to move along the X axis during each iteration of the animation|
-|maximumInfluence|`Double`|`0.9`|How far away from the line a pixel can be affected|
-|offset|`Distance`|`AbsoluteDistance(x=0.0, y=0.0, z=0.0)`|Offset of the line in the XYZ directions|
-|rotation|`Rotation`|`RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])`|Rotation of the line around the XYZ axes|
-|lineEquation|`Equation`|`Equation(coefficients=[])`|The equation representing the line the the pixel will follow|
+|interMovementDelay|Int|10|Delay between movements in the animation|
+|movementPerIteration|Double|1.0|How far to move along the X axis during each iteration of the animation|
+|maximumInfluence|Double|0.9|How far away from the line a pixel can be affected|
+|offset|Distance|AbsoluteDistance(x=0.0, y=0.0, z=0.0)|Offset of the line in the XYZ directions|
+|rotation|Rotation|RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])|Rotation of the line around the XYZ axes|
+|lineEquation|Equation|Equation(coefficients=[])|The equation representing the line the the pixel will follow|
 
 ## Description
 Pixels are run from one end of the strip to the other, 'stacking' up.

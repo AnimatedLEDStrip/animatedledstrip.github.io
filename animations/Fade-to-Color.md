@@ -12,12 +12,12 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Fade to Color`|
-|abbr|`FTC`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|name|Fade to Color|
+|abbr|FTC|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Sparkle to Color`|
-|abbr|`STC`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|name|Sparkle to Color|
+|abbr|STC|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|maxDelayBeforeSparkle|`Int`|`5000`|Maximum amount of time before a pixel will sparkle|
+|maxDelayBeforeSparkle|Int|5000|Maximum amount of time before a pixel will sparkle|
 
 ## Description
 Similar to the [Sparkle](Sparkle) animation, but the LEDs are not reverted after the sparkle.

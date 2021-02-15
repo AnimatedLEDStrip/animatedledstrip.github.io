@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Merge Sort (Parallel)`|
-|abbr|`MSP`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|name|Merge Sort (Parallel)|
+|abbr|MSP|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`50`|Delay between sorting movements|
+|interMovementDelay|Int|50|Delay between sorting movements|
 
 ## Description
 Visualization of merge sort.

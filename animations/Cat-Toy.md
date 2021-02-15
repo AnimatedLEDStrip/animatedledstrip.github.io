@@ -12,17 +12,17 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Cat Toy`|
-|abbr|`CAT`|
+|name|Cat Toy|
+|abbr|CAT|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`5`|Delay between movements in the pixel run animation|
-|maximumWait|`Int`|`1000`|Maximum time spent waiting at a pixel before moving to the next|
+|interMovementDelay|Int|5|Delay between movements in the pixel run animation|
+|maximumWait|Int|1000|Maximum time spent waiting at a pixel before moving to the next|
 
 ## Description
 Entertain your cat with a pixel running back and forth to random locations, waiting for up to `maximumWait` milliseconds between movements.

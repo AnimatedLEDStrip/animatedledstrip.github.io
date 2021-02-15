@@ -12,22 +12,22 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Pixel Marathon`|
-|abbr|`PXM`|
+|name|Pixel Marathon|
+|abbr|PXM|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`true`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|true|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`8`|Delay between movements in the pixel run animations|
-|maxInterAnimationDelay|`Int`|`1000`|Maximum time between start of one pixel run and start of the next|
-|movementPerIteration|`Double`|`1.0`|How far to move along the X axis during each iteration of the animation|
-|maximumInfluence|`Double`|`1.0`|How far away from the line a pixel can be affected|
-|offset|`Distance`|`AbsoluteDistance(x=0.0, y=0.0, z=0.0)`|Offset of the line in the XYZ directions|
-|rotation|`Rotation`|`RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])`|Rotation of the line around the XYZ axes|
-|lineEquation|`Equation`|`Equation(coefficients=[])`|The equation representing the line the the pixel will follow|
+|interMovementDelay|Int|8|Delay between movements in the pixel run animations|
+|maxInterAnimationDelay|Int|1000|Maximum time between start of one pixel run and start of the next|
+|movementPerIteration|Double|1.0|How far to move along the X axis during each iteration of the animation|
+|maximumInfluence|Double|1.0|How far away from the line a pixel can be affected|
+|offset|Distance|AbsoluteDistance(x=0.0, y=0.0, z=0.0)|Offset of the line in the XYZ directions|
+|rotation|Rotation|RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])|Rotation of the line around the XYZ axes|
+|lineEquation|Equation|Equation(coefficients=[])|The equation representing the line the the pixel will follow|
 
 ## Description
 Watch pixels race each other along the strip.

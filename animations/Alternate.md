@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Alternate`|
-|abbr|`ALT`|
+|name|Alternate|
+|abbr|ALT|
 |runCountDefault|Endless|
-|minimum colors|`2`|
-|unlimited colors|`true`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|2|
+|unlimited colors|true|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|alternationPeriod|`Int`|`1000`|Delay in milliseconds between alternations|
+|alternationPeriod|Int|1000|Delay in milliseconds between alternations|
 
 ## Description
 Strip alternates* between each color in colors, delaying `alternationPeriod` milliseconds between changes.

@@ -22,12 +22,12 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Sorting`|
-|abbr|`SRT`|
+|name|Sorting|
+|abbr|SRT|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

@@ -12,18 +12,18 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Plane Run`|
-|abbr|`PLR`|
+|name|Plane Run|
+|abbr|PLR|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`30`|Delay between movements in the animation|
-|movementPerIteration|`Double`|`1.0`|How far to move during each iteration of the animation|
-|rotation|`Rotation`|`RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])`|Rotation of the plane around the XYZ axes|
+|interMovementDelay|Int|30|Delay between movements in the animation|
+|movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
+|rotation|Rotation|RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])|Rotation of the plane around the XYZ axes|
 
 ## Description
 Runs a plane through all pixels.

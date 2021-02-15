@@ -12,20 +12,20 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Ripple`|
-|abbr|`RPL`|
+|name|Ripple|
+|abbr|RPL|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`30`|Delay between movements in the animation|
-|interAnimationDelay|`Int`|`500`|Time between start of one animation and start of the next|
-|movementPerIteration|`Double`|`1.0`|How far to move during each iteration of the animation|
-|center|`Location`|`Center of all pixels`|The center of the ripple|
-|distance|`Distance`|`PercentDistance(x=100.0, y=100.0, z=100.0)`|How far the ripple should travel|
+|interMovementDelay|Int|30|Delay between movements in the animation|
+|interAnimationDelay|Int|500|Time between start of one animation and start of the next|
+|movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
+|center|Location|Center of all pixels|The center of the ripple|
+|distance|Distance|PercentDistance(x=100.0, y=100.0, z=100.0)|How far the ripple should travel|
 
 ## Description
 Starts two [Meteor](Meteor) animations running in opposite directions from `center`, stopping after traveling `distance` or at the end of the strip/section, whichever comes first.

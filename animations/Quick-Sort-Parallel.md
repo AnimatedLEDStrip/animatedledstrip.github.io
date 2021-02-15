@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Quick Sort (Parallel)`|
-|abbr|`QKP`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|name|Quick Sort (Parallel)|
+|abbr|QKP|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`50`|Delay between sorting movements|
+|interMovementDelay|Int|50|Delay between sorting movements|
 
 ## Description
 Visualization of quick sort.

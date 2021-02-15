@@ -12,17 +12,17 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Cat Toy to Color`|
-|abbr|`CTC`|
-|runCountDefault|`1`|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|name|Cat Toy to Color|
+|abbr|CTC|
+|runCountDefault|1|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`5`|Delay between movements in the pixel run animation|
-|maximumWait|`Int`|`1000`|Maximum time spent waiting at a pixel before moving to the next|
+|interMovementDelay|Int|5|Delay between movements in the pixel run animation|
+|maximumWait|Int|1000|Maximum time spent waiting at a pixel before moving to the next|
 
 ## Description
 Using a process similar to the [Cat Toy](Cat-Toy) animation, set a strip's color.

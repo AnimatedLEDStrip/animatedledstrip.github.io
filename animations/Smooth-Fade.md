@@ -12,17 +12,17 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Smooth Fade`|
-|abbr|`SMF`|
+|name|Smooth Fade|
+|abbr|SMF|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interColorChangeDelay|`Int`|`50`|Delay between color changes|
-|colorsToFadeThrough|`Int`|`100`|Number of colors to fade through (used to prepare the ColorContainer)|
+|interColorChangeDelay|Int|50|Delay between color changes|
+|colorsToFadeThrough|Int|100|Number of colors to fade through (used to prepare the ColorContainer)|
 
 ## Description
 Like a [Smooth Chase](Smooth-Chase) animation, but the whole strip is the same color while fading through `colors[0]`.

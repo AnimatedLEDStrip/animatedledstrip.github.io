@@ -12,16 +12,16 @@ parent: Animations
 
 |Quality|Value|
 |:-:|:-:|
-|name|`Bounce`|
-|abbr|`BNC`|
+|name|Bounce|
+|abbr|BNC|
 |runCountDefault|Endless|
-|minimum colors|`1`|
-|unlimited colors|`false`|
-|dimensionality|`[ONE_DIMENSIONAL]`|
+|minimum colors|1|
+|unlimited colors|false|
+|dimensionality|[ONE_DIMENSIONAL]|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
-|interMovementDelay|`Int`|`5`|Delay between movements|
+|interMovementDelay|Int|5|Delay between movements|
 
 ## Description
 Pixel 'bounces' back and forth, with pixels at the end of each bounce fading back to their prolonged color after being set from `colors[0]`.
