@@ -24,7 +24,7 @@ parent: Animations
 |interMovementDelay|Int|30|Delay between movements in the animation|
 |interAnimationDelay|Int|500|Time between start of one animation and start of the next|
 |movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
-|rotation|[Rotation](core/new-animations#rotation)|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the plane around the XYZ axes|
+|rotation|[Rotation](core/new-animations.html#rotation)|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the plane around the XYZ axes|
 
 ## Description
 Wipes a plane through all pixels, leaving a fading trail behind.
