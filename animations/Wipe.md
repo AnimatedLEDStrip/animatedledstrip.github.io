@@ -14,10 +14,10 @@ parent: Animations
 |:-:|:-:|
 |name|Wipe|
 |abbr|WIP|
-|runCountDefault|1|
+|runCount default|1|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

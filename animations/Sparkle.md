@@ -14,10 +14,10 @@ parent: Animations
 |:-:|:-:|
 |name|Sparkle|
 |abbr|SPK|
-|runCountDefault|Endless|
+|runCount default|Endless|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

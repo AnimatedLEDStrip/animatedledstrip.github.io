@@ -24,10 +24,10 @@ parent: Animations
 |:-:|:-:|
 |name|Sorting|
 |abbr|SRT|
-|runCountDefault|Endless|
+|runCount default|Endless|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL|
 
 ## Description
 Runs all of the different sorting animations currently defined.

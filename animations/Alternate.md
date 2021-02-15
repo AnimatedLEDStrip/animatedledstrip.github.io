@@ -14,10 +14,10 @@ parent: Animations
 |:-:|:-:|
 |name|Alternate|
 |abbr|ALT|
-|runCountDefault|Endless|
+|runCount default|Endless|
 |minimum colors|2|
 |unlimited colors|true|
-|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

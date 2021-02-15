@@ -14,10 +14,10 @@ parent: Animations
 |:-:|:-:|
 |name|Quick Sort (Parallel)|
 |abbr|QKP|
-|runCountDefault|1|
+|runCount default|1|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

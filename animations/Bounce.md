@@ -14,10 +14,10 @@ parent: Animations
 |:-:|:-:|
 |name|Bounce|
 |abbr|BNC|
-|runCountDefault|Endless|
+|runCount default|Endless|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|

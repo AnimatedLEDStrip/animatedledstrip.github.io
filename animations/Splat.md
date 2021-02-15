@@ -14,17 +14,17 @@ parent: Animations
 |:-:|:-:|
 |name|Splat|
 |abbr|SPT|
-|runCountDefault|1|
+|runCount default|1|
 |minimum colors|1|
 |unlimited colors|false|
-|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
 |interMovementDelay|Int|15|Delay between movements in the animation|
 |movementPerIteration|Double|10.0|How far to move during each iteration of the animation|
 |center|Location|Center of all pixels|The center of the splat|
-|distance|Distance|PercentDistance(x=100.0, y=100.0, z=100.0)|How far the splat should reach|
+|distance|Distance|100.0%, 100.0%, 100.0%|How far the splat should reach|
 
 ## Description
 Similar to a [Ripple](Ripple) but the pixels don't fade back.

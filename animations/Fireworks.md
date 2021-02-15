@@ -14,17 +14,17 @@ parent: Animations
 |:-:|:-:|
 |name|Fireworks|
 |abbr|FWK|
-|runCountDefault|Endless|
+|runCount default|Endless|
 |minimum colors|1|
 |unlimited colors|true|
-|dimensionality|[ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL]|
+|dimensionality|ONE_DIMENSIONAL, TWO_DIMENSIONAL, THREE_DIMENSIONAL|
 
 |Parameter|Type|Default Value|Description|
 |:-:|:-:|:-:|:-:|
 |interMovementDelay|Int|30|Delay between movements in the ripple animation|
 |interAnimationDelay|Int|500|Time between start of one animation and start of the next|
 |movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
-|distance|Distance|PercentDistance(x=10.0, y=10.0, z=10.0)|Distance each firework should travel|
+|distance|Distance|10.0%, 10.0%, 10.0%|Distance each firework should travel|
 
 ## Description
 Runs [Ripple](Ripple) animations from random center points within the defined locations of all pixels, travelling a defined distance.
