@@ -24,8 +24,8 @@ parent: Animations
 |interMovementDelay|Int|30|Delay between movements in the animation|
 |interAnimationDelay|Int|500|Time between start of one animation and start of the next|
 |movementPerIteration|Double|1.0|How far to move during each iteration of the animation|
-|center|[Location](core/new-animations.html#location)|Center of all pixels|The center of the ripple|
-|distance|[Distance](core/new-animations.html#distance)|100.0%, 100.0%, 100.0%|How far the ripple should travel|
+|center|[Location](/core/new-animations.html#location)|Center of all pixels|The center of the ripple|
+|distance|[Distance](/core/new-animations.html#distance)|100.0%, 100.0%, 100.0%|How far the ripple should travel|
 
 ## Description
 Starts at a center point and travels in a sphere (or circle or two points) away from that center, setting LEDs that then fade back.

@@ -24,9 +24,9 @@ parent: Animations
 |interMovementDelay|Int|10|Delay between movements in the animation|
 |movementPerIteration|Double|1.0|How far to move along the X axis during each iteration of the animation|
 |maximumInfluence|Double|1.0|How far away from the line a pixel can be affected|
-|offset|[Distance](core/new-animations.html#distance)|0.0, 0.0, 0.0|Offset of the line in the XYZ directions|
-|rotation|[Rotation](core/new-animations.html#rotation)|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the line around the XYZ axes|
-|lineEquation|[Equation](core/new-animations.html#equation)|0x⁰|The equation representing the line the meteor will follow|
+|offset|[Distance](/core/new-animations.html#distance)|0.0, 0.0, 0.0|Offset of the line in the XYZ directions|
+|rotation|[Rotation](/core/new-animations.html#rotation)|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the line around the XYZ axes|
+|lineEquation|[Equation](/core/new-animations.html#equation)|0x⁰|The equation representing the line the meteor will follow|
 
 ## Description
 Like a [Pixel Run](Pixel-Run) animation, but the 'running' pixel has a trail behind it where the pixels fade back from `colors[0]`.
