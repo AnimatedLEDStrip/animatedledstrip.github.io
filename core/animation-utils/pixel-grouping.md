@@ -33,7 +33,7 @@ A `PixelsToModify` instance contains five lists that tell the animation what pix
 
 There are currently four pixel grouping functions:
 
-- [Group by X location](#grouppixelsbyxlocation)
-- Group by distance from a central point
-- Group along a line
-- Group along a line in spaced groups
+- [Group by X location](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.locationmanagement/group-pixels-by-x-location.html)
+- [Group by distance from a central point](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.locationmanagement/group-pixels-by-distance.html)
+- [Group along a line](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.locationmanagement/group-pixels-along-line.html)
+- [Group along a line in spaced groups](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.locationmanagement/group-groups-of-pixels-along-line.html)
