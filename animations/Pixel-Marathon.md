@@ -26,8 +26,8 @@ parent: Animations
 |movementPerIteration|Double|1.0|How far to move along the X axis during each iteration of the animation|
 |maximumInfluence|Double|1.0|How far away from the line a pixel can be affected|
 |offset|Distance|0.0, 0.0, 0.0|Offset of the line in the XYZ directions|
-|rotation|Rotation|RadiansRotation(xRotation=0.0, yRotation=0.0, zRotation=0.0, rotationOrder=[ROTATE_Z, ROTATE_X])|Rotation of the line around the XYZ axes|
-|lineEquation|Equation|Equation(coefficients=[])|The equation representing the line the the pixel will follow|
+|rotation|Rotation|0.0 rad, 0.0 rad, 0.0 rad, [ROTATE_Z, ROTATE_X]|Rotation of the line around the XYZ axes|
+|lineEquation|Equation|0x⁰|The equation representing the line the the pixel will follow|
 
 ## Description
 Watch pixels race each other along the strip.
