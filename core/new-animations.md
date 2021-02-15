@@ -154,7 +154,9 @@ val sparkle = DefinedAnimation(
 
 ### Animation Utility Functions
 
-There are a multitude of 
+There are a multitude of functions available to simplify the creation of new animations.
+See [Animation Utils](core/animation-utils/animation-utils) and [Pixel Grouping](core/animation-utils/pixel-grouping) for more details.
+
 ## Animation Groups
 
 An Animation Group is a list of animations that can be run one after the other.
@@ -176,7 +178,7 @@ If the `animationDuration` parameter for the specific animation is set to a non-
 val sortingAnimations = RandomizedAnimationGroup(
     groupInfo = Animation.AnimationInfo(name = "Sorting",
                                         abbr = "SRT",
-                                        description = "",
+                                        description = "Runs all of the sorting animations currently defined.",
                                         runCountDefault = -1,
                                         minimumColors = 1,
                                         unlimitedColors = false,
@@ -193,7 +195,7 @@ val sortingAnimations = RandomizedAnimationGroup(
 ## Adding a New Animation
 
 There are two places to create new animations.
-One is to add them in the main method of your server, using the `addNewAnimation()` or `addNewGroup` functions on the `LEDStrip` that you just created.
+One is to add them in the main method of your server, using the `addNewAnimation()` or `addNewGroup()` functions on the `LEDStrip` that you just created.
 This is especially good for testing new animations before they are added to the library.
 The other option is to add them as a predefined animation or animation group in the library.
 
