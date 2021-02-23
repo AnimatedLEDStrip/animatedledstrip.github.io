@@ -17,6 +17,7 @@ has_children: true
 - [Fade to Color](animations/Fade-to-Color)
 - [Fireworks](animations/Fireworks)
 - [Heap Sort](animations/Heap-Sort)
+- [Insertion Sort](animations/Insertion-Sort)
 - [Merge Sort (Parallel)](animations/Merge-Sort-Parallel)
 - [Merge Sort (Sequential)](animations/Merge-Sort-Sequential)
 - [Meteor](animations/Meteor)
