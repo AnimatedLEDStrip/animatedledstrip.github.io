@@ -29,5 +29,7 @@ Using a process similar to the [Cat Toy](Cat-Toy) animation, set a strip's color
 When the moving pixel goes past a pixel it has already set, it temporarily sets it to the inverse of that color before reverting it and moving on.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Cat Toy to Color Signature](/signatures/cat_toy_to_color.png)
 

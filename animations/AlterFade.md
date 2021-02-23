@@ -27,7 +27,11 @@ parent: Animations
 Strip fades between each color in colors, delaying `alternationPeriod` milliseconds between changes.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![AlterFade Signature](/signatures/alter_fade.png)
+
+### Two Dimensional
 
 ![AlterFade 2D Signature](/signatures/alter_fade.gif)
 

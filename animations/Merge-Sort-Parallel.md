@@ -28,5 +28,7 @@ Visualization of merge sort.
 `colors[0]` is randomized, then a parallelized merge sort is used to re-sort it.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Merge Sort (Parallel) Signature](/signatures/merge_sort_parallel.png)
 

@@ -35,7 +35,11 @@ Similar to [Pixel Run](Pixel-Run) but with multiple LEDs at a specified spacing.
 Works best if `spacing` is a divisor of the X distance covered by all LEDs.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Runway Lights Signature](/signatures/runway_lights.png)
 
-![Runway Lights 2D Signature](/signatures/runway_lights.gif
+### Two Dimensional
+
+![Runway Lights 2D Signature](/signatures/runway_lights.gif)
 

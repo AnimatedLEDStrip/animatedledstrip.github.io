@@ -23,7 +23,11 @@ parent: Animations
 Fade the strip to a color.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Fade to Color Signature](/signatures/fade_to_color.png)
 
-![Fade to Color 2D Signature](/signatures/fade_to_color.gif
+### Two Dimensional
+
+![Fade to Color 2D Signature](/signatures/fade_to_color.gif)
 

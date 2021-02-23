@@ -28,5 +28,7 @@ Visualization of quick sort.
 `colors[0]` is randomized, then a quick sort is used to re-sort it. Pivot locations are chosen randomly.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Quick Sort (Sequential) Signature](/signatures/quick_sort_sequential.png)
 

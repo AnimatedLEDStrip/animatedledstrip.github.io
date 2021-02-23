@@ -29,5 +29,7 @@ Pixel 'bounces' back and forth, leaving behind a pixel set from `colors[0]` at e
 Note that this animation has a quadratic time complexity.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Bounce to Color Signature](/signatures/bounce_to_color.png)
 

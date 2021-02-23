@@ -28,5 +28,7 @@ Visualization of merge sort.
 `pCols[0]` is randomized, then merge sort is used to re-sort it.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Merge Sort (Sequential) Signature](/signatures/merge_sort_sequential.png)
 

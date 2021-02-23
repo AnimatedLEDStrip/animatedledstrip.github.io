@@ -29,5 +29,7 @@ Entertain your cat with a pixel running back and forth to random locations, wait
 Works better on a shorter strip (~100 pixels).
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Cat Toy Signature](/signatures/cat_toy.png)
 

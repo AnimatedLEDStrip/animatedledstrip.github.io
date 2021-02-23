@@ -35,7 +35,11 @@ If the direction is `Direction.BACKWARD`, the same happens but with indices `i`,
 Works best with a ColorContainer with multiple colors.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Smooth Chase Signature](/signatures/smooth_chase.png)
 
-![Smooth Chase 2D Signature](/signatures/smooth_chase.gif
+### Two Dimensional
+
+![Smooth Chase 2D Signature](/signatures/smooth_chase.gif)
 

@@ -28,5 +28,7 @@ Visualization of heap sort.
 `colors[0]` is randomized, then a heap sort is used to re-sort it.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Heap Sort Signature](/signatures/heap_sort.png)
 

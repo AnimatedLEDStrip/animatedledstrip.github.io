@@ -32,7 +32,11 @@ Starts at a center point and travels in a sphere (or circle or two points) away 
 Does not wait for the ripple to complete before starting the next, only waiting `interAnimationDelay` milliseconds.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Ripple Signature](/signatures/ripple.png)
 
-![Ripple 2D Signature](/signatures/ripple.gif
+### Two Dimensional
+
+![Ripple 2D Signature](/signatures/ripple.gif)
 

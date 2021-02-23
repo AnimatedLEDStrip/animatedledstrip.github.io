@@ -32,7 +32,11 @@ parent: Animations
 Like a [Pixel Run](Pixel-Run) animation, but the 'running' pixel has a trail behind it where the pixels fade back from `colors[0]`.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Meteor Signature](/signatures/meteor.png)
 
-![Meteor 2D Signature](/signatures/meteor.gif
+### Two Dimensional
+
+![Meteor 2D Signature](/signatures/meteor.gif)
 

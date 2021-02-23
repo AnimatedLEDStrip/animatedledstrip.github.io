@@ -31,7 +31,11 @@ Runs a plane through all pixels.
 Note: Two-dimensional operation requires plane to be rotated around the X axis (probably by Pi/2 radians in most use cases)
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Plane Run Signature](/signatures/plane_run.png)
 
-![Plane Run 2D Signature](/signatures/plane_run.gif
+### Two Dimensional
+
+![Plane Run 2D Signature](/signatures/plane_run.gif)
 

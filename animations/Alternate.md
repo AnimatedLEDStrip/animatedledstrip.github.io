@@ -29,7 +29,11 @@ Strip alternates* between each color in colors, delaying `alternationPeriod` mil
 \* alternate may not be the best word because this animation supports more than two colors
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Alternate Signature](/signatures/alternate.png)
 
-![Alternate 2D Signature](/signatures/alternate.gif
+### Two Dimensional
+
+![Alternate 2D Signature](/signatures/alternate.gif)
 

@@ -33,5 +33,7 @@ parent: Animations
 Runs all of the sorting animations currently defined.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Sorting Signature](/signatures/sorting.png)
 

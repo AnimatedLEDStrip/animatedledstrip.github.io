@@ -31,7 +31,11 @@ Runs [Ripple](Ripple) animations from random center points within the defined lo
 Color is chosen randomly from `colors`.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Fireworks Signature](/signatures/fireworks.png)
 
-![Fireworks 2D Signature](/signatures/fireworks.gif
+### Two Dimensional
+
+![Fireworks 2D Signature](/signatures/fireworks.gif)
 

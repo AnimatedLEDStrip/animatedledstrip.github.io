@@ -32,7 +32,11 @@ parent: Animations
 A pixel colored from `colors[0]` runs along a line, affecting pixels within `maximumInfluence` of the line.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Pixel Run Signature](/signatures/pixel_run.png)
 
-![Pixel Run 2D Signature](/signatures/pixel_run.gif
+### Two Dimensional
+
+![Pixel Run 2D Signature](/signatures/pixel_run.gif)
 

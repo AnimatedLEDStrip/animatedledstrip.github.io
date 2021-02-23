@@ -30,7 +30,11 @@ A separate coroutine is created for each pixel.
 Each coroutine waits up to `maxDelayBeforeSparkle` seconds before sparkling its pixel.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Sparkle to Color Signature](/signatures/sparkle_to_color.png)
 
-![Sparkle to Color 2D Signature](/signatures/sparkle_to_color.gif
+### Two Dimensional
+
+![Sparkle to Color 2D Signature](/signatures/sparkle_to_color.gif)
 

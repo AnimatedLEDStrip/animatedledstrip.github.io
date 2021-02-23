@@ -33,7 +33,11 @@ parent: Animations
 Similar to [Runway Lights](Runway-Lights) but LEDs do not revert back to their prolonged color.
 
 ## [Animation Signature](Animation-Signatures)
+### One Dimensional
+
 ![Runway Lights to Color Signature](/signatures/runway_lights_to_color.png)
 
-![Runway Lights to Color 2D Signature](/signatures/runway_lights_to_color.gif
+### Two Dimensional
+
+![Runway Lights to Color 2D Signature](/signatures/runway_lights_to_color.gif)
 
