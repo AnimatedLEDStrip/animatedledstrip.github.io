@@ -27,3 +27,6 @@ parent: Animations
 Visualization of quick sort.
 `colors[0]` is randomized, then a parallelized quick sort is used to re-sort it. Pivot locations are chosen randomly.
 
+## [Animation Signature](Animation-Signatures)
+![Quick Sort (Parallel) Signature](/signatures/quick_sort_parallel.png)
+

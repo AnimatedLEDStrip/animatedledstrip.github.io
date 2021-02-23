@@ -34,3 +34,8 @@ Each pixel has to travel a shorter distance than the last.
 
 Note that this animation has a quadratic time complexity.
 
+## [Animation Signature](Animation-Signatures)
+![Stack Signature](/signatures/stack.png)
+
+![Stack 2D Signature](/signatures/stack.gif
+

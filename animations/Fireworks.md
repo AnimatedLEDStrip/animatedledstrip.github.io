@@ -30,3 +30,8 @@ parent: Animations
 Runs [Ripple](Ripple) animations from random center points within the defined locations of all pixels, travelling a defined distance.
 Color is chosen randomly from `colors`.
 
+## [Animation Signature](Animation-Signatures)
+![Fireworks Signature](/signatures/fireworks.png)
+
+![Fireworks 2D Signature](/signatures/fireworks.gif
+

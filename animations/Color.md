@@ -22,3 +22,8 @@ parent: Animations
 ## Description
 Set the strip to a color.
 
+## [Animation Signature](Animation-Signatures)
+![Color Signature](/signatures/color.png)
+
+![Color 2D Signature](/signatures/color.gif
+

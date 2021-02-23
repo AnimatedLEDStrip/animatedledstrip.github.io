@@ -27,3 +27,6 @@ parent: Animations
 Visualization of bubble sort.
 `pCols[0]` is randomized, then bubble sort is used to resort it.
 
+## [Animation Signature](Animation-Signatures)
+![Bubble Sort Signature](/signatures/bubble_sort.png)
+

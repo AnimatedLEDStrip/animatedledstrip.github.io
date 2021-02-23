@@ -28,3 +28,6 @@ Pixel 'bounces' back and forth, with pixels at the end of each bounce fading bac
 
 Note that this animation has a quadratic time complexity.
 
+## [Animation Signature](Animation-Signatures)
+![Bounce Signature](/signatures/bounce.png)
+

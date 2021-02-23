@@ -28,3 +28,6 @@ parent: Animations
 Entertain your cat with a pixel running back and forth to random locations, waiting for up to `maximumWait` milliseconds between movements.
 Works better on a shorter strip (~100 pixels).
 
+## [Animation Signature](Animation-Signatures)
+![Cat Toy Signature](/signatures/cat_toy.png)
+

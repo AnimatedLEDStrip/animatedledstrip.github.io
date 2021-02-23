@@ -30,3 +30,8 @@ parent: Animations
 Similar to a [Ripple](Ripple) but the pixels don't fade back.
 Runs two Wipe animations in opposite directions starting from `center`, stopping after traveling `distance` or at the end of the section, whichever comes first.
 
+## [Animation Signature](Animation-Signatures)
+![Splat Signature](/signatures/splat.png)
+
+![Splat 2D Signature](/signatures/splat.gif
+

@@ -22,3 +22,8 @@ parent: Animations
 ## Description
 Fade the strip to a color.
 
+## [Animation Signature](Animation-Signatures)
+![Fade to Color Signature](/signatures/fade_to_color.png)
+
+![Fade to Color 2D Signature](/signatures/fade_to_color.gif
+

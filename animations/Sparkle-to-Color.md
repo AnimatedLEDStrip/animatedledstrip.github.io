@@ -29,3 +29,8 @@ Similar to the [Sparkle](Sparkle) animation, but the LEDs are not reverted after
 A separate coroutine is created for each pixel.
 Each coroutine waits up to `maxDelayBeforeSparkle` seconds before sparkling its pixel.
 
+## [Animation Signature](Animation-Signatures)
+![Sparkle to Color Signature](/signatures/sparkle_to_color.png)
+
+![Sparkle to Color 2D Signature](/signatures/sparkle_to_color.gif
+

@@ -30,3 +30,8 @@ Wipes a plane through all pixels, leaving behind colors[0].
 
 Note: Two-dimensional operation requires plane to be rotated around the X axis (probably by Pi/2 radians in most use cases)
 
+## [Animation Signature](Animation-Signatures)
+![Wipe Signature](/signatures/wipe.png)
+
+![Wipe 2D Signature](/signatures/wipe.gif
+

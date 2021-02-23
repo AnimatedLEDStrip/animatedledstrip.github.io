@@ -35,3 +35,8 @@ And yes, the pun was very much intended.
 
 Note that this animation has a quadratic time complexity.
 
+## [Animation Signature](Animation-Signatures)
+![Stack Overflow Signature](/signatures/stack_overflow.png)
+
+![Stack Overflow 2D Signature](/signatures/stack_overflow.gif
+

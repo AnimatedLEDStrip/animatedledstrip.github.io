@@ -26,3 +26,8 @@ parent: Animations
 ## Description
 Similar to [Sparkle](Sparkle) but pixels fade back.
 
+## [Animation Signature](Animation-Signatures)
+![Sparkle Fade Signature](/signatures/sparkle_fade.png)
+
+![Sparkle Fade 2D Signature](/signatures/sparkle_fade.gif
+

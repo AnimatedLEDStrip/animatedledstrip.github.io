@@ -34,3 +34,8 @@ Watch pixels race each other along a line.
 A color is chosen randomly from `colors`, then a pixel is sent down the strip.
 After waiting for up to `maxInterAnimationDelay` milliseconds, another pixel is sent.
 
+## [Animation Signature](Animation-Signatures)
+![Pixel Marathon Signature](/signatures/pixel_marathon.png)
+
+![Pixel Marathon 2D Signature](/signatures/pixel_marathon.gif
+

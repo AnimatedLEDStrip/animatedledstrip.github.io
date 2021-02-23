@@ -31,3 +31,8 @@ parent: Animations
 Starts at a center point and travels in a sphere (or circle or two points) away from that center, setting LEDs that then fade back.
 Does not wait for the ripple to complete before starting the next, only waiting `interAnimationDelay` milliseconds.
 
+## [Animation Signature](Animation-Signatures)
+![Ripple Signature](/signatures/ripple.png)
+
+![Ripple 2D Signature](/signatures/ripple.gif
+

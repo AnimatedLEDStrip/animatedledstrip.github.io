@@ -34,3 +34,8 @@ Then, if the direction is `Direction.FORWARD`, each pixel is set to `colors[0][i
 If the direction is `Direction.BACKWARD`, the same happens but with indices `i`, `i-1`, `i-2`, etc.
 Works best with a ColorContainer with multiple colors.
 
+## [Animation Signature](Animation-Signatures)
+![Smooth Chase Signature](/signatures/smooth_chase.png)
+
+![Smooth Chase 2D Signature](/signatures/smooth_chase.gif
+

@@ -27,3 +27,8 @@ parent: Animations
 ## Description
 Like a [Smooth Chase](Smooth-Chase) animation, but the whole strip is the same color while fading through `colors[0]`.
 
+## [Animation Signature](Animation-Signatures)
+![Smooth Fade Signature](/signatures/smooth_fade.png)
+
+![Smooth Fade 2D Signature](/signatures/smooth_fade.gif
+
