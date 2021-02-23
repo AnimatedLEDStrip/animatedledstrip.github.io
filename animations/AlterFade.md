@@ -29,5 +29,5 @@ Strip fades between each color in colors, delaying `alternationPeriod` milliseco
 ## [Animation Signature](Animation-Signatures)
 ![AlterFade Signature](/signatures/alter_fade.png)
 
-![AlterFade 2D Signature](/signatures/alter_fade.gif
+![AlterFade 2D Signature](/signatures/alter_fade.gif)
 
