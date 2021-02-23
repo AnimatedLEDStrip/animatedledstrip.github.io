@@ -12,7 +12,7 @@ Animations come in two forms: Defined Animations and Animation Groups.
 [Animation Groups](#animation-groups) are a list of animations that will be run together, either in a specific order or randomized.
 Defined Animations and Animation Groups built-in to the library are located in the `animations.predefined` and `animations.predefinedgroups` packages, respectively.
 
-## `AnimationInfo`
+## [`Animation.AnimationInfo`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations/-animation/-animation-info/index.html)
 
 All animations have a corresponding `AnimationInfo` instance with details about that animation.
 These details include:
@@ -79,26 +79,26 @@ These include:
 - `Rotation`
 - `Equation`
 
-### `Location`
+### [`Location`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.locationmanagement/-location/index.html)
 
 A location is a point in three-dimensional space, taking three `Double` arguments for the x, y, and z coordinates.
 The distance between two `Location`s can be calculated using the `Location.distanceFrom(other: Location)` function.
 
-### `Distance`
+### [`Distance`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-distance/index.html)
 
 A distance is a set of three values, specifying how far an animation should travel in the x, y, and z directions.
-There are two types of distances, `AbsoluteDistance`s and `PercentDistance`s
+There are two types of distances, [`AbsoluteDistance`s](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-absolute-distance/index.html) and [`PercentDistance`s](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-percent-distance/index.html).
 An `AbsoluteDistance` is a distance with the exact distance in each direction.
 A `PercentDistance` is a distance that specifies a percentage of the full distance covered by LEDs in that direction that should be traveled (`100.0` represents the full distance).
 All `PercentDistance`s are converted to `AbsoluteDistance`s when the parameters for an animation are being prepared.
 
-### `Rotation`
+### [`Rotation`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-rotation/index.html)
 
 A rotation is a set of three values, specifying how far to rotate points around the x, y, and z axes, plus a list of `RotationAxis`es that specify what order to perform the rotations.
-There are two types of rotations, `RadiansRotation`s and `DegreesRotation`s.
+There are two types of rotations, [`RadiansRotation`s](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-radians-rotation/index.html) and [`DegreesRotation`s](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-degrees-rotation/index.html).
 All `DegreesRotation`s are converted to `RadiansRotation`s when the parameters for an animation are being prepared, because the `sin` and `cos` functions use radians.
 
-### `Equation`
+### [`Equation`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.parameters/-equation/index.html)
 
 An `Equation` parameter specifies coefficients for x in an equation.
 Each coefficient corresponds to the term with the degree equal to its index in the coefficients list.
@@ -108,11 +108,11 @@ Animations such as [Pixel Run](Pixel-Run) use this to determine what line the pi
 ## Defined Animations
 
 A defined animation is an animation that modifies the LED strip or runs specific sub-animations.
-Examples include [Sparkle](Sparkle), which modifies the strip directly, or [Cat Toy](Cat-Toy), which runs [Pixel Run](Pixel-Run) animations between specific start and end points.
+Examples include [Sparkle](/animations/Sparkle), which modifies the strip directly, or [Cat Toy](/animations/Cat-Toy), which runs [Pixel Run](/animation/Pixel-Run) animations between specific start and end points.
 
-Any definition of a `DefinedAnimation` requires two parts, an [`AnimationInfo` instance](#animationinfo), and a lambda with the actual animation logic that will be run.
+Any definition of a [`DefinedAnimation`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations/-defined-animation/index.html) requires two parts, an [`AnimationInfo` instance](#animationinfo), and a lambda with the actual animation logic that will be run.
 
-This lambda is passed three arguments: an `AnimationManager` instance, which is handling the running of that animation, a `RunningAnimationParams` instance, with the parameters for the animation, and a `CoroutineScope` instance, in case the animation starts subanimations or child coroutines that aren't full animations (e.g. [Sparkle](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/animations/predefined/sparkle.kt)).
+This lambda is passed three arguments: an [`AnimationManager`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.animationmanagement/-animation-manager/index.html) instance, which is handling the running of that animation, a [`RunningAnimationParams`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.leds.animationmanagement/-running-animation-params/index.html) instance, with the parameters for the animation, and a [`CoroutineScope`](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-scope/) instance, in case the animation starts subanimations or child coroutines that aren't full animations (e.g. [Sparkle](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/animations/predefined/sparkle.kt)).
 This scope should be used for all child coroutines because it allows the full animation to be canceled all at once by [canceling the parent coroutine](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-job/index.html) that created the `CoroutineScope`.
 
 ### Example Defined Animation
@@ -156,17 +156,17 @@ val sparkle = DefinedAnimation(
 ### Animation Utility Functions
 
 There are a multitude of functions available to simplify the creation of new animations.
-See [Animation Utils](core/animation-utils/animation-utils) and [Pixel Grouping](core/animation-utils/pixel-grouping) for more details.
+See [Animation Utils](/core/animation-utils/animation-utils) and [Pixel Grouping](/core/animation-utils/pixel-grouping) for more details.
 
 ## Animation Groups
 
 An Animation Group is a list of animations that can be run one after the other.
-The difference between an animation group like [Sorting Animations](Sorting-Animations) and a defined animation like [Cat Toy](Cat-Toy) is that the former is simply a list of animation names that can be run one after the other, while the latter has a lambda defined that performs calculations and runs specific animations at specific times and places.
+The difference between an animation group like [Sorting](/animations/Sorting) and a defined animation like [Cat Toy](/animations/Cat-Toy) is that the former is simply a list of animation names that can be run one after the other, while the latter has a lambda defined that performs calculations and runs specific animations at specific times and places.
 
 An animation group can come in one of two types, ordered or randomized.
-This is determined by the `GroupType`.
+This is determined by the [`GroupType`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.groups/-group-type/index.html).
 
-An animation group is created by creating a `NewAnimationGroupInfo` that contains information about the group, the `GroupType`, and the list of animations.
+An animation group is created by creating a [`NewAnimationGroupInfo`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.animations.groups/-animation-group/-new-animation-group-info/index.html) that contains information about the group, the `GroupType`, and the list of animations.
 When the animation group is prepared, it will take all the parameters that are requested by the animations listed and add them to its own requested parameters, with suffixes denoting which parameters are used by which animation.
 It also adds `postAnimationDelay` and `animationDuration` parameters for each animation.
 It can also have its own parameters in addition to those of the listed animations.
@@ -206,4 +206,4 @@ Adding a new animation to the library has a few steps.
 
 - Create a file in either [`animations/predefined`](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/tree/master/src/commonMain/kotlin/animatedledstrip/animations/predefined) (if creating a `DefinedAnimation`) or [`animations/predefinedgroups`](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/tree/master/src/commonMain/kotlin/animatedledstrip/animations/predefinedgroups) (if creating an animation group). This file should be named with the name of the animation in snake case
 - Create a `val` with your animation
-- Add your animation to the `predefinedAnimations` list or `predefinedGroups` list in [`DefineAnimations.kt`](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/animations/DefineAnimations.kt) (depending on if it is an animation or a group). This is done so all animations can be found when the `LEDStripAnimationManager` needs them. The lists are separate so the animations the groups need are defined before the group needs information about them.
+- Add your animation to the `predefinedAnimations` list or `predefinedGroups` list in [`PredefinedAnimations.kt`](https://github.com/AnimatedLEDStrip/AnimatedLEDStrip/blob/master/src/commonMain/kotlin/animatedledstrip/animations/PredefinedAnimations.kt) (depending on if it is an animation or a group). This is done so all animations can be found when the `LEDStripAnimationManager` needs them. The lists are separate so the animations the groups need are defined before the group needs information about them.

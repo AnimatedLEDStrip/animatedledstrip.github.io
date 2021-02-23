@@ -29,7 +29,7 @@ a[2..4] = 0xFFFF00                            // a.colors = [0xFF, 0xFF00, 0xFFF
 a[0, 3] = 0x0                                 // a.colors = [0x0,  0xFF00, 0xFFFF00, 0x0,      0xFFFF00]
 ```
 
-## `grayscale()` vs `grayscaled()` and `invert()` vs `inverse()`
+## [`grayscale()`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.colors/grayscale.html) vs [`grayscaled()`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.colors/grayscaled.html) and [`invert()`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.colors/invert.html) vs [`inverse()`](https://animatedledstrip.github.io/AnimatedLEDStrip/animatedledstrip-core/animatedledstrip.colors/inverse.html)
 The `ColorContainer` class contains methods for grayscaling and inverting the colors inside it.
 There are slight differences between `grayscale()` and `grayscaled()`, and between `invert()` and `inverse()`.
 For example:
