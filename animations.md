@@ -29,6 +29,7 @@ has_children: true
 - [Ripple](animations/Ripple)
 - [Runway Lights](animations/Runway-Lights)
 - [Runway Lights to Color](animations/Runway-Lights-to-Color)
+- [Shell Sort](animations/Shell-Sort)
 - [Smooth Chase](animations/Smooth-Chase)
 - [Smooth Fade](animations/Smooth-Fade)
 - [Sparkle](animations/Sparkle)

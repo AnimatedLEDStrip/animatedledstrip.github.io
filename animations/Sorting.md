@@ -13,10 +13,12 @@ parent: Animations
 ## Included Animations
 - [Bubble Sort](animations/Bubble-Sort)
 - [Heap Sort](animations/Heap-Sort)
+- [Insertion Sort](animations/Insertion-Sort)
 - [Merge Sort Parallel](animations/Merge-Sort-Parallel)
 - [Merge Sort Sequential](animations/Merge-Sort-Sequential)
 - [Quick Sort Parallel](animations/Quick-Sort-Parallel)
 - [Quick Sort Sequential](animations/Quick-Sort-Sequential)
+- [Shell Sort](animations/Shell-Sort)
 
 ## Animation Info
 
@@ -28,6 +30,34 @@ parent: Animations
 |minimum colors|1|
 |unlimited colors|false|
 |dimensionality|ONE_DIMENSIONAL|
+
+|Parameter|Type|Default Value|Description|
+|:-:|:-:|:-:|:-:|
+|postAnimationDelay-Bubble Sort (0)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Bubble Sort (0)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Bubble Sort (0)|Int|5|Delay between sorting movements|
+|postAnimationDelay-Heap Sort (1)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Heap Sort (1)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Heap Sort (1)|Int|25|Delay between sorting movements|
+|postAnimationDelay-Insertion Sort (2)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Insertion Sort (2)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Insertion Sort (2)|Int|25|Delay between sorting movements|
+|postAnimationDelay-Merge Sort (Parallel) (3)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Merge Sort (Parallel) (3)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Merge Sort (Parallel) (3)|Int|50|Delay between sorting movements|
+|postAnimationDelay-Merge Sort (Sequential) (4)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Merge Sort (Sequential) (4)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Merge Sort (Sequential) (4)|Int|25|Delay between sorting movements|
+|postAnimationDelay-Quick Sort (Parallel) (5)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Quick Sort (Parallel) (5)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Quick Sort (Parallel) (5)|Int|50|Delay between sorting movements|
+|postAnimationDelay-Quick Sort (Sequential) (6)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Quick Sort (Sequential) (6)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Quick Sort (Sequential) (6)|Int|25|Delay between sorting movements|
+|postAnimationDelay-Shell Sort (7)|Int|1000|Delay after this animation before the next animation starts|
+|animationDuration-Shell Sort (7)|Int|-1|Maximum duration of this animation before it gets cancelled (negative means no timeout)|
+|interMovementDelay-Shell Sort (7)|Int|10|Delay between sorting movements|
+|gapSequence-Shell Sort (7)|String|"shell"|One of: shell, frank&lazarus, hibbard, papernov&stasevich, pratt, knuth, incerpi&sedgewick, sedgewick82, sedgewick86, tokuda, ciura|
 
 ## Description
 Runs all of the sorting animations currently defined.
