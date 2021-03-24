@@ -11,14 +11,14 @@ parent: Animations
 ![Randomized](https://img.shields.io/badge/-randomized-blue)
 
 ## Included Animations
-- [Bubble Sort](animations/Bubble-Sort)
-- [Heap Sort](animations/Heap-Sort)
-- [Insertion Sort](animations/Insertion-Sort)
-- [Merge Sort Parallel](animations/Merge-Sort-Parallel)
-- [Merge Sort Sequential](animations/Merge-Sort-Sequential)
-- [Quick Sort Parallel](animations/Quick-Sort-Parallel)
-- [Quick Sort Sequential](animations/Quick-Sort-Sequential)
-- [Shell Sort](animations/Shell-Sort)
+- [Bubble Sort](/animations/Bubble-Sort)
+- [Heap Sort](/animations/Heap-Sort)
+- [Insertion Sort](/animations/Insertion-Sort)
+- [Merge Sort Parallel](/animations/Merge-Sort-Parallel)
+- [Merge Sort Sequential](/animations/Merge-Sort-Sequential)
+- [Quick Sort Parallel](/animations/Quick-Sort-Parallel)
+- [Quick Sort Sequential](/animations/Quick-Sort-Sequential)
+- [Shell Sort](/animations/Shell-Sort)
 
 ## Animation Info
 
