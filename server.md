@@ -27,8 +27,36 @@ curl -s https://animatedledstrip.github.io/install/install-pi-server.sh | sudo b
 
 ### Creating a New Server Executable
 
-The AnimatedLEDStrip server library is combined with a device library to run a server on that device.
-Both are added as dependencies and a short main method is added.
+The AnimatedLEDStrip server library, a compatibility class and a short main method are needed to create an executable server.
+
+Example class:
+
+```kotlin
+class WS281xCompat(stripInfo: StripInfo) : Ws281xLedStrip(
+    stripInfo.numLEDs,
+    stripInfo.pin ?: 12,
+    800000,
+    10,
+    255,
+    0,
+    false,
+    LedStripType.WS2811_STRIP_GRB,
+    false,
+), NativeLEDStrip {
+
+    override val numLEDs: Int = stripInfo.numLEDs
+
+    override fun close() {}
+
+    override fun setPixelColor(pixel: Int, color: Int) =
+        setPixel(
+            pixel,
+            color shr 16 and 0xFF,
+            color shr 8 and 0xFF,
+            color and 0xFF,
+        )
+}
+```
 
 Example main method:
 
@@ -38,6 +66,6 @@ fun main(args: Array<String>) {
 }
 ```
 
-Replace `WS281xCompat::class` with the class from the device library being used.
+Replace `WS281xCompat::class` with the class you create.
 
 See the [Raspberry Pi Server](#raspberry-pi-server) for an example server executable.
