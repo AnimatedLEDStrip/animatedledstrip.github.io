@@ -18,7 +18,7 @@ AnimatedLEDStrip is designed to make running fancy animations on LEDs easy, with
 
 AnimatedLEDStrip gives you many options for how you integrate it into your project.
 
-If you want a solution that works right out of the box, then take a look at the [Raspberry Pi Server](/server#raspberry-pi-server) and the [AnimatedLEDStrip clients](/clients).
+If you want a solution that works right out of the box, then take a look at the [Raspberry Pi Server](/server.html#raspberry-pi-server) and the [AnimatedLEDStrip clients](/clients).
 
 ## Features
 
