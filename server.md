@@ -29,7 +29,7 @@ curl -s https://animatedledstrip.github.io/install/install-pi-server.sh | sudo b
 
 The AnimatedLEDStrip server library, a compatibility class and a short main method are needed to create an executable server.
 
-Example class:
+Example class, connecting AnimatedLEDStrip to the [rpi-ws281x-java](https://github.com/rpi-ws281x/rpi-ws281x-java) library:
 
 ```kotlin
 class WS281xCompat(stripInfo: StripInfo) : Ws281xLedStrip(
