@@ -180,6 +180,7 @@ Because some classes use other classes, the optimal creation order would be:
 
 - `/running/{id}` (`endAnimation`, requires one string parameter) (returns `RunningAnimationParams`)
 
-##### Additional Functions{: .text-grey-lt-000 }
+##### Additional Functions
+{: .text-grey-lt-000 }
 
 - `endAnimation` or `endAnimationFromParams`, requiring one `RunningAnimationParams` parameter (calls `endAnimation` with `param.id`)
