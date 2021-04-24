@@ -33,6 +33,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `AnimationToRunParams`, `RunningAnimationParams`
 - `AnimationParameter`
 - `AnimationInfo`
+- `NewAnimationGroupInfo`
 - `StripInfo`
 - `Section`
 
@@ -124,6 +125,15 @@ Because some classes use other classes, the optimal creation order would be:
 |`x`      |`Double`|`0.0`  |
 |`y`      |`Double`|`0.0`  |
 |`z`      |`Double`|`0.0`  |
+
+#### `NewAnimationGroupInfo`
+{: .fs-5 }
+
+|Parameter      |Type           |
+|:-------------:|:-------------:|
+|`groupType`    |`String`       |
+|`groupInfo`    |`AnimationInfo`|
+|`animationList`|`List<String>` |
 
 #### `PreparedColorContainer`
 {: .fs-5 }
