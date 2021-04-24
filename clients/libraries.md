@@ -150,17 +150,17 @@ Because some classes use other classes, the optimal creation order would be:
 #### GET Endpoints
 
 - `/animation/{name}` (`getAnimationInfo`, requires one string parameter) (returns `AnimationInfo`)
-- `/animations/names` (`getSupportedAnimationsNames`) (returns list(string))
 - `/animations` (`getSupportedAnimations`) (returns list(`AnimationInfo`))
 - `/animations/map` (`getSupportedAnimationsMap`) (returns map(string to `AnimationInfo`))
+- `/animations/names` (`getSupportedAnimationsNames`) (returns list(string))
 - `/running` (`getRunningAnimations`) (returns map(string to `RunningAnimationParams`))
 - `/running/ids` (`getRunningAnimationsIds`) (returns list(string))
 - `/running/{id}` (`getRunningAnimationParams`, requires one string parameter) (returns `RunningAnimationParams`)
+- `/section/{name}` (`getSection`, requires one string parameter) (returns `Section`)
 - `/sections` (`getSections`) (returns list(`Section`))
 - `/sections/map` (`getSectionsMap`) (returns map(string to `Section`))
-- `/section/{name}` (`getSection`, requires one string parameter) (returns `Section`)
-- `/strip/info` (`getStripInfo`) (returns `StripInfo`)
 - `/strip/color` (`getCurrentStripColor`) (returns list(int))
+- `/strip/info` (`getStripInfo`) (returns `StripInfo`)
 
 ##### Additional Functions
 
@@ -168,6 +168,7 @@ Because some classes use other classes, the optimal creation order would be:
 
 #### POST Endpoints
 
+- `/animations/newGroup` (`createNewGroup`, requires one `NewAnimationGroupInfo` parameter) (returns `AnimationInfo`)
 - `/sections` (`createNewSection`, requires one `Section` parameter) (returns `Section`)
 - `/start` (`startAnimation`, requires one `AnimationToRunParams` parameter) (returns `RunningAnimationParams`)
 - `/strip/clear` (`clearStrip`) (no return)
