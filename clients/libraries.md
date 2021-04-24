@@ -166,6 +166,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `/strip/info` (`getStripInfo`) (returns `StripInfo`)
 
 ##### Additional Functions
+{: .text-grey-lt-100 }
 
 - `getFullStripSection` (calls `getSection` with `"fullStrip"`)
 
@@ -181,6 +182,6 @@ Because some classes use other classes, the optimal creation order would be:
 - `/running/{id}` (`endAnimation`, requires one string parameter) (returns `RunningAnimationParams`)
 
 ##### Additional Functions
-{: .text-grey-lt-000 }
+{: .text-grey-lt-100 }
 
 - `endAnimation` or `endAnimationFromParams`, requiring one `RunningAnimationParams` parameter (calls `endAnimation` with `param.id`)
