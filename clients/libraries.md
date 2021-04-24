@@ -26,7 +26,10 @@ All client libraries should follow this format, though small variations are expe
 ### Classes
 
 Because some classes use other classes, the optimal creation order would be:
-- `AbsoluteDistance`, `ColorContainer`, `DegreesRotation`, `Equation`, `Location`, `PercentDistance`, `PreparedColorContainer`, `RadiansRotation`
+- `AbsoluteDistance`, `PercentDistance`
+- `DegreesRotation`, `RadiansRotation`
+- `Equation`, `Location`
+- `ColorContainer`, `PreparedColorContainer`
 - `AnimationToRunParams`, `RunningAnimationParams`
 - `AnimationParameter`
 - `AnimationInfo`
