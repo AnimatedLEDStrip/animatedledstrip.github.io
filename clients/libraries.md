@@ -37,6 +37,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `Section`
 
 #### `AbsoluteDistance`
+{: .fs-5 }
 
 - `x` (double) (`0.0`)
 - `y` (double) (`0.0`)
