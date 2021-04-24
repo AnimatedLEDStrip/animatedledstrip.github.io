@@ -190,7 +190,7 @@ Because some classes use other classes, the optimal creation order would be:
 ### HTTP Endpoints
 
 |Method|Endpoint              |Function                     |Parameter              |Return                               |
-|:----:|:--------------------:|:---------------------------:|:---------------------:|:-----------------------------------:|
+|:-----|:--------------------:|:---------------------------:|:---------------------:|:-----------------------------------:|
 |GET   |`/animation/{name}`   |`getAnimationInfo`           |`String`               |`AnimationInfo`                      |
 |GET   |`/animations`         |`getSupportedAnimations`     |                       |`list<AnimationInfo>`                |
 |GET   |`/animations/map`     |`getSupportedAnimationsMap`  |                       |`Map<String, AnimationInfo>`         |
