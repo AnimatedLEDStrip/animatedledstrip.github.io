@@ -46,20 +46,22 @@ Because some classes use other classes, the optimal creation order would be:
 #### `AnimationInfo`
 {: .fs-4 }
 
-- `name` (string) (`""`)
-- `abbr` (string) (`""`)
-- `description` (string) (`""`)
-- `runCountDefault` (int) (`0`)
-- `minimumColors` (int) (`0`)
-- `unlimitedColors` (boolean) (`false`)
-- `dimensionality` (set(string)) (`setOf()`)
-- `intParams` (list(`AnimationParameter<Int>`)) (`mapOf()`)
-- `doubleParams` (list(`AnimationParameter<Double>`)) (`mapOf()`)
-- `stringParams` (list(`AnimationParameter<String>`)) (`mapOf()`)
-- `locationParams` (list(`AnimationParameter<Location>`)) (`mapOf()`)
-- `distanceParams` (list(`AnimationParameter<AbsoluteDistance/PercentDistance>`)) (`mapOf()`)
-- `rotationParams` (list(`AnimationParameter<DegreesRotation/RadiansRotation>`)) (`mapOf()`)
-- `equationParams` (list(`AnimationParameter<Equation>`)) (`mapOf()`)
+|Parameter|Type|Default|
+|:-------:|:--:|:-----:|
+|`name`|`String`|`""`|
+|`abbr`|`String`|`""`|
+|`description`|`String`|`""`|
+|`runCountDefault`|`Int`|`0`|
+|`minimumColors`|`Int`|`0`|
+|`unlimitedColors`|`Boolean`|`false`|
+|`dimensionality`|`Set<String>`|`setOf()`|
+|`intParams`|`List<AnimationParameter<Int>>`|`listOf()`|
+|`doubleParams`|`List<AnimationParameter<Double>>`|`listOf()`|
+|`stringParams`|`List<AnimationParameter<String>>`|`listOf()`|
+|`locationParams`|`List<AnimationParameter<Location>>`|`listOf()`|
+|`distanceParams`|`List<AnimationParameter<AbsoluteDistance/PercentDistance>>`|`mapOf()`|
+|`rotationParams`|`List<AnimationParameter<DegreesRotation/RadiansRotation>>`|`mapOf()`|
+|`equationParams`|`List<AnimationParameter<Equation>`>|`mapOf()`|
 
 #### `AnimationParameter<T>`
 {: .fs-4 }
