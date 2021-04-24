@@ -189,44 +189,30 @@ Because some classes use other classes, the optimal creation order would be:
 
 ### HTTP Endpoints
 
-#### GET Endpoints
-
-|Endpoint           |Function                     |Parameter|Return                               |
-|:-----------------:|:---------------------------:|:-------:|:-----------------------------------:|
-|`/animation/{name}`|`getAnimationInfo`           |`String` |`AnimationInfo`                      |
-|`/animations`      |`getSupportedAnimations`     |         |`list<AnimationInfo>`                |
-|`/animations/map`  |`getSupportedAnimationsMap`  |         |`Map<String, AnimationInfo>`         |
-|`/animations/names`|`getSupportedAnimationsNames`|         |`List<String>`                       |
-|`/running`         |`getRunningAnimations`       |         |`Map<String, RunningAnimationParams>`|
-|`/running/ids`     |`getRunningAnimationsIds`    |         |`List<String>`                       |
-|`/running/{id}`    |`getRunningAnimationParams`  |`String` |`RunningAnimationParams`             |
-|`/section/{name}`  |`getSection`                 |`String` |`Section`                            |
-|`/sections`        |`getSections`                |         |`List<Section>`                      |
-|`/sections/map`    |`getSectionsMap`             |         |`Map<String, Section>`               |
-|`/strip/color`     |`getCurrentStripColor`       |         |`List<int>`                          |
-|`/strip/info`      |`getStripInfo`               |         |`StripInfo`                          |
-
-##### Additional Functions
-{: .text-grey-lt-100 }
-
-- `getFullStripSection` (calls `getSection` with `"fullStrip"`)
-
-#### POST Endpoints
-
-|Endpoint              |Function          |Parameter              |Return                  |
-|:--------------------:|:----------------:|:---------------------:|:----------------------:|
-|`/animations/newGroup`|`createNewGroup`  |`NewAnimationGroupInfo`|`AnimationInfo`         |
-|`/sections`           |`createNewSection`|`Section`              |`Section`               |
-|`/start`              |`startAnimation`  |`AnimationToRunParams` |`RunningAnimationParams`|
-|`/strip/clear`        |`clearStrip`      |                       |`void`                  |
-
-#### DELETE Endpoints
-
-|Endpoint       |Function      |Parameter|Return                  |
-|:-------------:|:------------:|:-------:|:----------------------:|
-|`/running/{id}`|`endAnimation`|`String` |`RunningAnimationParams`|
+|Method|Endpoint              |Function                     |Parameter              |Return                               |
+|:----:|:--------------------:|:---------------------------:|:---------------------:|:-----------------------------------:|
+|GET   |`/animation/{name}`   |`getAnimationInfo`           |`String`               |`AnimationInfo`                      |
+|GET   |`/animations`         |`getSupportedAnimations`     |                       |`list<AnimationInfo>`                |
+|GET   |`/animations/map`     |`getSupportedAnimationsMap`  |                       |`Map<String, AnimationInfo>`         |
+|GET   |`/animations/names`   |`getSupportedAnimationsNames`|                       |`List<String>`                       |
+|POST  |`/animations/newGroup`|`createNewGroup`             |`NewAnimationGroupInfo`|`AnimationInfo`                      |
+|GET   |`/running`            |`getRunningAnimations`       |                       |`Map<String, RunningAnimationParams>`|
+|GET   |`/running/ids`        |`getRunningAnimationsIds`    |                       |`List<String>`                       |
+|GET   |`/running/{id}`       |`getRunningAnimationParams`  |`String`               |`RunningAnimationParams`             |
+|DELETE|`/running/{id}`       |`endAnimation`               |`String`               |`RunningAnimationParams`             |
+|GET   |`/section/{name}`     |`getSection`                 |`String`               |`Section`                            |
+|GET   |`/sections`           |`getSections`                |                       |`List<Section>`                      |
+|POST  |`/sections`           |`createNewSection`           |`Section`              |`Section`                            |
+|GET   |`/sections/map`       |`getSectionsMap`             |                       |`Map<String, Section>`               |
+|POST  |`/start`              |`startAnimation`             |`AnimationToRunParams` |`RunningAnimationParams`             |
+|POST  |`/strip/clear`        |`clearStrip`                 |                       |`void`                               |
+|GET   |`/strip/color`        |`getCurrentStripColor`       |                       |`List<int>`                          |
+|GET   |`/strip/info`         |`getStripInfo`               |                       |`StripInfo`                          |
 
 ##### Additional Functions
 {: .text-grey-lt-100 }
 
-- `endAnimation` or `endAnimationFromParams`, requiring one `RunningAnimationParams` parameter (calls `endAnimation` with `param.id`)
+|Function                                  |Parameter               |Operation                            |
+|:----------------------------------------:|:----------------------:|:-----------------------------------:|
+|`endAnimation` or `endAnimationFromParams`|`RunningAnimationParams`|calls `endAnimation` with `param.id` |
+|`getFullStripSection`                     |                        |calls `getSection` with `"fullStrip"`|
