@@ -37,148 +37,174 @@ Because some classes use other classes, the optimal creation order would be:
 - `Section`
 
 #### `AbsoluteDistance`
-{: .fs-4 }
+{: .fs-5 }
 
-- `x` (double) (`0.0`)
-- `y` (double) (`0.0`)
-- `z` (double) (`0.0`)
+|Parameter|Type    |Default|
+|:-------:|:------:|:-----:|
+|`x`      |`Double`|`0.0`  |
+|`y`      |`Double`|`0.0`  |
+|`z`      |`Double`|`0.0`  |
 
 #### `AnimationInfo`
-{: .fs-4 }
+{: .fs-5 }
 
-|Parameter|Type|Default|
-|:-------:|:--:|:-----:|
-|`name`|`String`|`""`|
-|`abbr`|`String`|`""`|
-|`description`|`String`|`""`|
-|`runCountDefault`|`Int`|`0`|
-|`minimumColors`|`Int`|`0`|
-|`unlimitedColors`|`Boolean`|`false`|
-|`dimensionality`|`Set<String>`|`setOf()`|
-|`intParams`|`List<AnimationParameter<Int>>`|`listOf()`|
-|`doubleParams`|`List<AnimationParameter<Double>>`|`listOf()`|
-|`stringParams`|`List<AnimationParameter<String>>`|`listOf()`|
-|`locationParams`|`List<AnimationParameter<Location>>`|`listOf()`|
-|`distanceParams`|`List<AnimationParameter<AbsoluteDistance/PercentDistance>>`|`mapOf()`|
-|`rotationParams`|`List<AnimationParameter<DegreesRotation/RadiansRotation>>`|`mapOf()`|
-|`equationParams`|`List<AnimationParameter<Equation>`>|`mapOf()`|
+|Parameter        |Type                                                        |Default   |
+|:---------------:|:----------------------------------------------------------:|:--------:|
+|`name`           |`String`                                                    |`""`      |
+|`abbr`           |`String`                                                    |`""`      |
+|`description`    |`String`                                                    |`""`      |
+|`runCountDefault`|`Int`                                                       |`0`       |
+|`minimumColors`  |`Int`                                                       |`0`       |
+|`unlimitedColors`|`Boolean`                                                   |`false`   |
+|`dimensionality` |`Set<String>`                                               |`setOf()` |
+|`intParams`      |`List<AnimationParameter<Int>>`                             |`listOf()`|
+|`doubleParams`   |`List<AnimationParameter<Double>>`                          |`listOf()`|
+|`stringParams`   |`List<AnimationParameter<String>>`                          |`listOf()`|
+|`locationParams` |`List<AnimationParameter<Location>>`                        |`listOf()`|
+|`distanceParams` |`List<AnimationParameter<AbsoluteDistance/PercentDistance>>`|`listOf()`|
+|`rotationParams` |`List<AnimationParameter<DegreesRotation/RadiansRotation>>` |`listOf()`|
+|`equationParams` |`List<AnimationParameter<Equation>>`                        |`listOf()`|
 
 #### `AnimationParameter<T>`
-{: .fs-4 }
+{: .fs-5 }
 
-- `name` (string) (`""`)
-- `description` (string) (`""`)
-- `default` (nullable of type `T`) (`null`)
+|Parameter    |Type    |Default|
+|:-----------:|:------:|:-----:|
+|`name`       |`String`|`""`   |
+|`description`|`String`|`""`   |
+|`default`    |`T?`    |`null` |
 
 #### `AnimationToRunParams`
-{: .fs-4 }
+{: .fs-5 }
 
-- `animation` (string) (`""`)
-- `colors` (list(`ColorContainer`/`PreparedColorContainer`)) (`listOf()`)
-- `id` (string) (`""`)
-- `section` (string) (`""`)
-- `runCount` (int) (`0`)
-- `intParams` (map(string to int)) (`mapOf()`)
-- `doubleParams` (map(string to double)) (`mapOf()`)
-- `stringParams` (map(string to string)) (`mapOf()`)
-- `locationParams` (map(string to `Location`)) (`mapOf()`)
-- `distanceParams` (map(string to `AbsoluteDistance`/`PercentDistance`)) (`mapOf()`)
-- `rotationParams` (map(string to `DegreesRotation`/`RadiansRotation`)) (`mapOf()`)
-- `equationParams` (map(string to `Equation`)) (`mapOf()`)
+|Parameter       |Type                                           |Default   |
+|:--------------:|:---------------------------------------------:|:--------:|
+|`animation`     |`String`                                       |`""`      |
+|`colors`        |`List<ColorContainer/PreparedColorContainer>`  |`listOf()`|
+|`id`            |`String`                                       |`""`      |
+|`section`       |`String`                                       |`""`      |
+|`runCount`      |`Int`                                          |`0`       |
+|`intParams`     |`Map<String, Int>`                             |`mapOf()` |
+|`doubleParams`  |`Map<String, Double>`                          |`mapOf()` |
+|`stringParams`  |`Map<String, String>`                          |`mapOf()` |
+|`locationParams`|`Map<String, Location>`                        |`mapOf()` |
+|`distanceParams`|`Map<String, AbsoluteDistance/PercentDistance>`|`mapOf()` |
+|`rotationParams`|`Map<String, DegreesRotation/RadiansRotation>` |`mapOf()` |
+|`equationParams`|`Map<String, Equation>`                        |`mapOf()` |
 
 #### `ColorContainer`
-{: .fs-4 }
+{: .fs-5 }
 
-- `colors` (list(int)) (`listOf()`)
+|Parameter|Type       |Default   |
+|:-------:|:---------:|:--------:|
+|`colors` |`List<Int>`|`listOf()`|
 
 #### `DegreesRotation`
-{: .fs-4 }
+{: .fs-5 }
 
-- `xRotation` (double) (`0.0`)
-- `yRotation` (double) (`0.0`)
-- `zRotation` (double) (`0.0`)
-- `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
+|Parameter      |Type          |Default                        |
+|:-------------:|:------------:|:-----------------------------:|
+|`xRotation`    |`Double`      |`0.0`                          |
+|`yRotation`    |`Double`      |`0.0`                          |
+|`zRotation`    |`Double`      |`0.0`                          |
+|`rotationOrder`|`List<String>`|`listOf("ROTATE_Z", "ROTATE_X"`|
 
 #### `Equation`
-{: .fs-4 }
+{: .fs-5 }
 
-- `coefficients` (list(int)) (`listOf()`)
+|Parameter     |Type       |Default   |
+|:------------:|:---------:|:--------:|
+|`coefficients`|`List<Int>`|`listOf()`|
 
 #### `Location`
-{: .fs-4 }
+{: .fs-5 }
 
-- `x` (double) (`0.0`)
-- `y` (double) (`0.0`)
-- `z` (double) (`0.0`)
+|Parameter|Type    |Default|
+|:-------:|:------:|:-----:|
+|`x`      |`Double`|`0.0`  |
+|`y`      |`Double`|`0.0`  |
+|`z`      |`Double`|`0.0`  |
 
 #### `PreparedColorContainer`
-{: .fs-4 }
+{: .fs-5 }
 
-- `colors` (list(int))
-- `originalColors` (list(int))
+|Parameter       |Type       |
+|:--------------:|:---------:|
+|`colors`        |`List<int>`|
+|`originalColors`|`List<int>`|
 
 #### `RadiansRotation`
-{: .fs-4 }
+{: .fs-5 }
 
-- `xRotation` (double) (`0.0`)
-- `yRotation` (double) (`0.0`)
-- `zRotation` (double) (`0.0`)
-- `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
+|Parameter      |Type          |Default                         |
+|:-------------:|:------------:|:------------------------------:|
+|`xRotation`    |`Double`      |`0.0`                           |
+|`yRotation`    |`Double`      |`0.0`                           |
+|`zRotation`    |`Double`      |`0.0`                           |
+|`rotationOrder`|`List<String>`|`listOf("ROTATE_Z", "ROTATE_X")`|
 
 #### `RunningAnimationParams`
-{: .fs-4 }
+{: .fs-5 }
 
-- `animationName` (string) (`""`)
-- `colors` (list(`PreparedColorContainer`))
-- `id` (string) (`""`)
-- `section` (string) (`""`)
-- `runCount` (int) (`0`)
-- `intParams` (map(string to int)) (`mapOf()`)
-- `doubleParams` (map(string to double)) (`mapOf()`)
-- `stringParams` (map(string to string)) (`mapOf()`)
-- `locationParams` (map(string to `Location`)) (`mapOf()`)
-- `distanceParams` (map(string to `AbsoluteDistance`)) (`mapOf()`)
-- `rotationParams` (map(string to `RadiansRotation`)) (`mapOf()`)
-- `equationParams` (map(string to `Equation`)) (`mapOf()`)
-- `sourceParams` (`AnimationToRunParams`)
+|Parameter       |Type                           |Default  |
+|:--------------:|:-----------------------------:|:-------:|
+|`animationName` |`String`                       |`""`     |
+|`colors`        |`List<PreparedColorContainer>` |         |
+|`id`            |`String`                       |`""`     |
+|`section`       |`String`                       |`""`     |
+|`runCount`      |`Int`                          |`0`      |
+|`intParams`     |`Map<String, Int>`             |`mapOf()`|
+|`doubleParams`  |`Map<String, Double>`          |`mapOf()`|
+|`stringParams`  |`Map<String, String>`          |`mapOf()`|
+|`locationParams`|`Map<String, Location>`        |`mapOf()`|
+|`distanceParams`|`Map<String, AbsoluteDistance>`|`mapOf()`|
+|`rotationParams`|`Map<String, RadiansRotation>` |`mapOf()`|
+|`equationParams`|`Map<String, Equation>`        |`mapOf()`|
+|`sourceParams`  |`AnimationToRunParams`         |         |
 
 #### `StripInfo`
-{: .fs-4 }
+{: .fs-5 }
 
-- `numLEDs` (int) (`0`)
-- `pin` (nullable int) (`null`)
-- `renderDelay` (int) (`10`)
-- `isRenderLoggingEnabled` (boolean) (`false`)
-- `renderLogFile` (string) (`""`)
-- `rendersBetweenLogSaves` (int) (`1000`)
-- `is1DSupported` (boolean) (`true`)
-- `is2DSupported` (boolean) (`false`)
-- `is3DSupported` (boolean) (`false`)
-- `ledLocations` (list(`Location`)) (`listOf()`)
+|Parameter               |Type            |Default   |
+|:----------------------:|:--------------:|:--------:|
+|`numLEDs`               |`Int`           |`0`       |
+|`pin`                   |`Int?`          |`null`    |
+|`renderDelay`           |`Int`           |`10`      |
+|`isRenderLoggingEnabled`|`Boolean`       |`false`   |
+|`renderLogFile`         |`String`        |`""`      |
+|`rendersBetweenLogSaves`|`Int`           |`1000`    |
+|`is1DSupported`         |`Boolean`       |`true`    |
+|`is2DSupported`         |`Boolean`       |`false`   |
+|`is3DSupported`         |`Boolean`       |`false`   |
+|`ledLocations`          |`List<Location>`|`listOf()`|
 
 #### `Section`
-{: .fs-4 }
+{: .fs-5 }
 
-- `name` (string) (`""`)
-- `pixels` (list(int)) (`listOf()`)
-- `parentSectionName` (string) (`""`)
+|Parameter          |Type       |Default   |
+|:-----------------:|:---------:|:--------:|
+|`name`             |`String`   |`""`      |
+|`pixels`           |`List<Int>`|`listOf()`|
+|`parentSectionName`|`String`   |`""`      |
 
 ### HTTP Endpoints
 
 #### GET Endpoints
 
-- `/animation/{name}` (`getAnimationInfo`, requires one string parameter) (returns `AnimationInfo`)
-- `/animations` (`getSupportedAnimations`) (returns list(`AnimationInfo`))
-- `/animations/map` (`getSupportedAnimationsMap`) (returns map(string to `AnimationInfo`))
-- `/animations/names` (`getSupportedAnimationsNames`) (returns list(string))
-- `/running` (`getRunningAnimations`) (returns map(string to `RunningAnimationParams`))
-- `/running/ids` (`getRunningAnimationsIds`) (returns list(string))
-- `/running/{id}` (`getRunningAnimationParams`, requires one string parameter) (returns `RunningAnimationParams`)
-- `/section/{name}` (`getSection`, requires one string parameter) (returns `Section`)
-- `/sections` (`getSections`) (returns list(`Section`))
-- `/sections/map` (`getSectionsMap`) (returns map(string to `Section`))
-- `/strip/color` (`getCurrentStripColor`) (returns list(int))
-- `/strip/info` (`getStripInfo`) (returns `StripInfo`)
+|Endpoint           |Function                     |Parameter|Return                               |
+|:-----------------:|:---------------------------:|:-------:|:-----------------------------------:|
+|`/animation/{name}`|`getAnimationInfo`           |`String` |`AnimationInfo`                      |
+|`/animations`      |`getSupportedAnimations`     |         |`list<AnimationInfo>`                |
+|`/animations/map`  |`getSupportedAnimationsMap`  |         |`Map<String, AnimationInfo>`         |
+|`/animations/names`|`getSupportedAnimationsNames`|         |`List<String>`                       |
+|`/running`         |`getRunningAnimations`       |         |`Map<String, RunningAnimationParams>`|
+|`/running/ids`     |`getRunningAnimationsIds`    |         |`List<String>`                       |
+|`/running/{id}`    |`getRunningAnimationParams`  |`String` |`RunningAnimationParams`             |
+|`/section/{name}`  |`getSection`                 |`String` |`Section`                            |
+|`/sections`        |`getSections`                |         |`List<Section>`                      |
+|`/sections/map`    |`getSectionsMap`             |         |`Map<String, Section>`               |
+|`/strip/color`     |`getCurrentStripColor`       |         |`List<int>`                          |
+|`/strip/info`      |`getStripInfo`               |         |`StripInfo`                          |
 
 ##### Additional Functions
 {: .text-grey-lt-100 }
@@ -187,14 +213,18 @@ Because some classes use other classes, the optimal creation order would be:
 
 #### POST Endpoints
 
-- `/animations/newGroup` (`createNewGroup`, requires one `NewAnimationGroupInfo` parameter) (returns `AnimationInfo`)
-- `/sections` (`createNewSection`, requires one `Section` parameter) (returns `Section`)
-- `/start` (`startAnimation`, requires one `AnimationToRunParams` parameter) (returns `RunningAnimationParams`)
-- `/strip/clear` (`clearStrip`) (no return)
+|Endpoint              |Function          |Parameter              |Return                  |
+|:--------------------:|:----------------:|:---------------------:|:----------------------:|
+|`/animations/newGroup`|`createNewGroup`  |`NewAnimationGroupInfo`|`AnimationInfo`         |
+|`/sections`           |`createNewSection`|`Section`              |`Section`               |
+|`/start`              |`startAnimation`  |`AnimationToRunParams` |`RunningAnimationParams`|
+|`/strip/clear`        |`clearStrip`      |                       |`void`                  |
 
 #### DELETE Endpoints
 
-- `/running/{id}` (`endAnimation`, requires one string parameter) (returns `RunningAnimationParams`)
+|Endpoint       |Function      |Parameter|Return                  |
+|:-------------:|:------------:|:-------:|:----------------------:|
+|`/running/{id}`|`endAnimation`|`String` |`RunningAnimationParams`|
 
 ##### Additional Functions
 {: .text-grey-lt-100 }
