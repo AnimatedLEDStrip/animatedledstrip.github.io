@@ -37,13 +37,14 @@ Because some classes use other classes, the optimal creation order would be:
 - `Section`
 
 #### `AbsoluteDistance`
-{: .fs-5 }
+{: .fs-4 }
 
 - `x` (double) (`0.0`)
 - `y` (double) (`0.0`)
 - `z` (double) (`0.0`)
 
 #### `AnimationInfo`
+{: .fs-5 }
 
 - `name` (string) (`""`)
 - `abbr` (string) (`""`)
@@ -61,12 +62,14 @@ Because some classes use other classes, the optimal creation order would be:
 - `equationParams` (list(`AnimationParameter<Equation>`)) (`mapOf()`)
 
 #### `AnimationParameter<T>`
+{: .fs-5 }
 
 - `name` (string) (`""`)
 - `description` (string) (`""`)
 - `default` (nullable of type `T`) (`null`)
 
 #### `AnimationToRunParams`
+{: .fs-5 }
 
 - `animation` (string) (`""`)
 - `colors` (list(`ColorContainer`/`PreparedColorContainer`)) (`listOf()`)
@@ -82,10 +85,12 @@ Because some classes use other classes, the optimal creation order would be:
 - `equationParams` (map(string to `Equation`)) (`mapOf()`)
 
 #### `ColorContainer`
+{: .fs-5 }
 
 - `colors` (list(int)) (`listOf()`)
 
 #### `DegreesRotation`
+{: .fs-5 }
 
 - `xRotation` (double) (`0.0`)
 - `yRotation` (double) (`0.0`)
@@ -93,21 +98,25 @@ Because some classes use other classes, the optimal creation order would be:
 - `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
 
 #### `Equation`
+{: .fs-5 }
 
 - `coefficients` (list(int)) (`listOf()`)
 
 #### `Location`
+{: .fs-5 }
 
 - `x` (double) (`0.0`)
 - `y` (double) (`0.0`)
 - `z` (double) (`0.0`)
 
 #### `PreparedColorContainer`
+{: .fs-5 }
 
 - `colors` (list(int))
 - `originalColors` (list(int))
 
 #### `RadiansRotation`
+{: .fs-5 }
 
 - `xRotation` (double) (`0.0`)
 - `yRotation` (double) (`0.0`)
@@ -115,6 +124,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `rotationOrder` (list(string)) (`listOf("ROTATE_Z", "ROTATE_X"`)
 
 #### `RunningAnimationParams`
+{: .fs-5 }
 
 - `animationName` (string) (`""`)
 - `colors` (list(`PreparedColorContainer`))
@@ -131,6 +141,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `sourceParams` (`AnimationToRunParams`)
 
 #### `StripInfo`
+{: .fs-5 }
 
 - `numLEDs` (int) (`0`)
 - `pin` (nullable int) (`null`)
@@ -144,6 +155,7 @@ Because some classes use other classes, the optimal creation order would be:
 - `ledLocations` (list(`Location`)) (`listOf()`)
 
 #### `Section`
+{: .fs-5 }
 
 - `name` (string) (`""`)
 - `pixels` (list(int)) (`listOf()`)
