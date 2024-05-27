@@ -13,6 +13,8 @@ has_children: true
 - [Bubble Sort](animations/Bubble-Sort)
 - [Cat Toy](animations/Cat-Toy)
 - [Cat Toy to Color](animations/Cat-Toy-to-Color)
+- [Christmas](animations/Christmas)
+- [Christmas Twinkle](animations/Christmas-Twinkle)
 - [Color](animations/Color)
 - [Fade to Color](animations/Fade-to-Color)
 - [Fireworks](animations/Fireworks)
