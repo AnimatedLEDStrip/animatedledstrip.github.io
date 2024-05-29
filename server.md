@@ -19,10 +19,16 @@ The server library adds two features to the core library:
 
 [GitHub Repo](https://github.com/AnimatedLEDStrip/server-pi){: .btn }
 
-A server implementation for the Raspberry Pi can be installed by running:
+A 32 bit server implementation for the Raspberry Pi can be installed by running:
 
 ```bash
-curl -s https://animatedledstrip.github.io/install/install-pi-server.sh | sudo bash
+curl -s https://animatedledstrip.github.io/install/install-pi-server.bash | sudo bash
+```
+
+A 64 bit server implementation for the Raspberry Pi can be installed by running:
+
+```bash
+curl -s https://animatedledstrip.github.io/install/install-pi-server-64bit.bash | sudo bash
 ```
 
 ### Creating a New Server Executable
