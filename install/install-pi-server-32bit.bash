@@ -61,9 +61,9 @@ fi
 
 echo -n "Installing ledserver..."
 
-wget "https://github.com/AnimatedLEDStrip/server-pi/releases/download/${PI_SERVER_VERSION}/animatedledstrip-server-pi-${PI_SERVER_VERSION}-64bit.jar"
+wget "https://github.com/AnimatedLEDStrip/server-pi/releases/download/${PI_SERVER_VERSION}/animatedledstrip-server-pi-${PI_SERVER_VERSION}-32bit.jar"
 
-install -m 755 "animatedledstrip-server-pi-${PI_SERVER_VERSION}-64bit.jar" /usr/local/leds/ledserver.jar
+install -m 755 "animatedledstrip-server-pi-${PI_SERVER_VERSION}-32bit.jar" /usr/local/leds/ledserver.jar
 
 wget -q https://raw.githubusercontent.com/AnimatedLEDStrip/server-pi/master/install/ledserver.sh
 
