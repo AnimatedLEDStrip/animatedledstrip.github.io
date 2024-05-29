@@ -22,7 +22,7 @@ The server library adds two features to the core library:
 A 32 bit server implementation for the Raspberry Pi can be installed by running:
 
 ```bash
-curl -s https://animatedledstrip.github.io/install/install-pi-server.bash | sudo bash
+curl -s https://animatedledstrip.github.io/install/install-pi-server-32bit.bash | sudo bash
 ```
 
 A 64 bit server implementation for the Raspberry Pi can be installed by running:
